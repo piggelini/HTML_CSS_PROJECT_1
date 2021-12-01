@@ -1,0 +1,25 @@
+//media queries
+
+@mixin for-tablet {
+  @media (min-width:481px){
+    @content;
+  }
+}
+
+@mixin for-small-screen {
+  @media (min-width:769px){
+    @content;
+  }
+}
+
+@mixin for-large-screen {
+  @media (min-wdith:1025px){
+    @content;
+  }
+}
+
+@mixin for-extra-large-screen {
+  @media (min-wdith:1201px) {
+    @content;
+  }
+}
