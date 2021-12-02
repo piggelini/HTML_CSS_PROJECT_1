@@ -1,3 +1,24 @@
-*{
-    background:red;
+header {
+    display: flex;
+    flex-direction: column;
+
+    .header-top {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+
+        height: 80px;
+        width: 390px;
+
+        img{
+            height: 63px;
+        }
+    }
+
+    .header-bottom {
+        display: flex;
+        justify-content: center;
+        width: 390px;
+        height:31px;
+    }
 }
