@@ -8,12 +8,15 @@ body{
 .wrapper{
     display:flex;
     flex-direction: column;
-    position: absolute;
+    position: relative;
+    min-height: 100%;
 
 header {
     display: flex;
     flex-direction: column;
     position:fixed;
+    min-width: 100%;
+    
 
 
     .header-top {
@@ -21,7 +24,6 @@ header {
         justify-content: space-between;
         align-items: center;
         height: 80px;
-        width: 390px;
         background: $green;
 
         img{
@@ -41,19 +43,17 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 390px;
         height:31px;
-        background: $cerise;
+        background: $coral;
     }
 }
 
 .content{
-    width:390px;
     height: 600px;
 }
 
 footer {
-    width:390px;
+    flex-basis:100%;
     height: 72px;
     background: $green;
     display:flex;

@@ -12,7 +12,8 @@ body .wrapper {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: absolute;
+  position: relative;
+  min-height: 100%;
 }
 
 body .wrapper header {
@@ -24,6 +25,7 @@ body .wrapper header {
       -ms-flex-direction: column;
           flex-direction: column;
   position: fixed;
+  min-width: 100%;
 }
 
 body .wrapper header .header-top {
@@ -37,7 +39,6 @@ body .wrapper header .header-top {
       -ms-flex-align: center;
           align-items: center;
   height: 80px;
-  width: 390px;
   background: #B5D07D;
 }
 
@@ -63,18 +64,17 @@ body .wrapper header .header-bottom {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 390px;
   height: 31px;
-  background: #ED6591;
+  background: #F9A196;
 }
 
 body .wrapper .content {
-  width: 390px;
   height: 600px;
 }
 
 body .wrapper footer {
-  width: 390px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   height: 72px;
   background: #B5D07D;
   display: -webkit-box;
