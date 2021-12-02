@@ -1,4 +1,4 @@
-header {
+.wrapper header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8,7 +8,7 @@ header {
           flex-direction: column;
 }
 
-header .header-top {
+.wrapper header .header-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,20 +20,25 @@ header .header-top {
           align-items: center;
   height: 80px;
   width: 390px;
+  background: #B5D07D;
 }
 
-header .header-top img {
+.wrapper header .header-top img {
   height: 63px;
 }
 
-header .header-bottom {
+.wrapper header .header-bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 390px;
   height: 31px;
+  background: #ED6591;
 }
 /*# sourceMappingURL=style.css.map */
