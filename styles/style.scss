@@ -26,9 +26,53 @@ header {
         height: 80px;
         background: $green;
 
+        .Logo {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            
+
+            a:nth-of-type(2) {
+                display: none;
+            
+            @include for-tablet {
+                display: block;
+                text-decoration: none;
+                margin: 15px;
+                color: $white;
+                text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+                font-size: 25px;
+                font-family: $heading;
+            
+            }
+        }
+        }
         img{
             width: 63px;
             margin-left:10px;
+        }
+
+        .header-nav {
+            display: none;
+
+            @include for-small-screen{
+                display: block;
+
+                ul{
+                    display:flex;
+                    flex-direction: row;
+                    list-style-type: none;
+                    color: $black;
+
+                    a{
+                        text-decoration: none;
+                        color: $black;
+                        margin: 10px;
+                    }
+                }
+            }
+
+
         }
 
         .fa-bars {
@@ -36,7 +80,12 @@ header {
             margin:10px;
             font-size: 50px;
             text-shadow: 1px 1px black;
+
+            @include for-small-screen{
+                display: none;
+            }
         }
+
     }
 
     .header-bottom {
@@ -60,6 +109,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: $text;
     
 
 
