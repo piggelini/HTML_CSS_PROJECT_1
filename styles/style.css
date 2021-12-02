@@ -23,8 +23,7 @@ body .wrapper header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
 }
 
 body .wrapper header .header-top {
@@ -43,7 +42,15 @@ body .wrapper header .header-top {
 }
 
 body .wrapper header .header-top img {
-  height: 63px;
+  width: 63px;
+  margin-left: 10px;
+}
+
+body .wrapper header .header-top .fa-bars {
+  color: #F5F3F2;
+  margin: 10px;
+  font-size: 50px;
+  text-shadow: 1px 1px black;
 }
 
 body .wrapper header .header-bottom {
@@ -89,23 +96,37 @@ body .wrapper footer .footer-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .wrapper footer .footer-nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
-body .wrapper footer .footer-nav li {
-  text-decoration: none;
-}
-
-body .wrapper footer .footer-nav li a {
+body .wrapper footer .footer-nav ul a {
   text-decoration: none;
   color: #23272A;
-  margin-right: 5px;
+  padding: 0 5px 0 5px;
 }
 
-body .wrapper footer .footer-nav li a:hover {
+body .wrapper footer .footer-nav ul a:hover {
   color: white;
 }
 

@@ -13,7 +13,7 @@ body{
 header {
     display: flex;
     flex-direction: column;
-    position:sticky;
+    position:fixed;
 
 
     .header-top {
@@ -25,7 +25,15 @@ header {
         background: $green;
 
         img{
-            height: 63px;
+            width: 63px;
+            margin-left:10px;
+        }
+
+        .fa-bars {
+            color: $white;
+            margin:10px;
+            font-size: 50px;
+            text-shadow: 1px 1px black;
         }
     }
 
@@ -51,20 +59,27 @@ footer {
     display:flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center;
+    align-items: center;
+    
 
 
     .footer-nav{
         display: flex;
+        justify-content: center;
+        
+    ul {
+        list-style-type:none;
+        display: flex;
         flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin:0;
+        padding: 0;
 
-    li {
-        text-decoration: none;
-
-    a{
+    a {
         text-decoration: none;
         color: $black;
-        margin-right:5px;
+        padding: 0 5px 0 5px;
 
     &:hover {
         color: white;
