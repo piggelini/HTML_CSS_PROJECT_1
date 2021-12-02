@@ -127,6 +127,10 @@ body .wrapper header .header-bottom {
           align-items: center;
   height: 31px;
   background: #F9A196;
+  color: #23272A;
+  font-family: "Sulphur Point";
+  font-size: 12px;
+  font-weight: bold;
 }
 
 body .wrapper .content {
@@ -134,8 +138,7 @@ body .wrapper .content {
 }
 
 body .wrapper footer {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  min-width: 100%;
   height: 72px;
   background: #B5D07D;
   display: -webkit-box;
@@ -152,6 +155,8 @@ body .wrapper footer {
       -ms-flex-align: center;
           align-items: center;
   font-family: "Sulphur Point";
+  font-weight: bold;
+  font-size: 14px;
 }
 
 body .wrapper footer .footer-nav {
@@ -185,11 +190,15 @@ body .wrapper footer .footer-nav ul {
 body .wrapper footer .footer-nav ul a {
   text-decoration: none;
   color: #23272A;
-  padding: 0 5px 0 5px;
+  padding: 0 8px 0 8px;
 }
 
 body .wrapper footer .footer-nav ul a:hover {
   color: white;
+}
+
+body .wrapper footer .footer-nav ul :not(:last-of-type) {
+  border-right: 1px solid black;
 }
 
 body .wrapper footer p {
