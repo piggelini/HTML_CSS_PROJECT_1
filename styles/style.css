@@ -1,3 +1,20 @@
+h1, h2, h3 {
+  font-family: "Baloo 2";
+}
+
+p {
+  font-family: "Sulphur Point", "sans-serif";
+  font-size: 18px;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
 body {
   margin: 0;
   background: #F5F3F2;
@@ -220,6 +237,10 @@ footer p {
 
 .recensioner-sida hr {
   border-top: 2px solid #B5D07D;
+}
+
+.recension {
+  background-color: #F5F3F2;
 }
 
 .recension hr {

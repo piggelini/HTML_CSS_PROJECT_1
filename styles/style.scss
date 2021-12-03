@@ -1,6 +1,27 @@
 @import "partials/variables";
 @import "partials/mixins";
 
+// text
+
+h1, h2, h3 {
+  font-family: $heading;
+}
+
+p {
+  font-family: $text, "sans-serif";
+  font-size: 18px;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+//Other
+
 body{
     margin:0;
     background: $white;
@@ -171,6 +192,7 @@ footer {
 }
 
 .recension {
+  background-color: $white;
   hr {
     border-top: solid 1px $green;
   }
