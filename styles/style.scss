@@ -202,9 +202,10 @@ footer {
     text-align: center;
     @include for-small-screen {
       display: inline-block;
+      margin: 0;
     }
   }
-  hr {
+  .recension-divider {
     border-top: 2px solid $green;
     margin: 0 1em;
     @include for-tablet {
@@ -240,25 +241,32 @@ footer {
   }
   p {
     margin: 20px 0px;
+    @include for-small-screen {
+      max-width: 20em;
+    }
   }
   @include for-tablet {
     margin: 0 5em;
   }
   @include for-small-screen {
     margin: 1em;
+    box-shadow: $white-box-shadow;
   }
 }
 
 .rating {
-  display: flex;;
+  display: flex;
   p {
     margin: 0 10px;
   }
 }
 
-
 .fa-star {
   color:$cerise;
+  font-size: 18px;
+  @include for-small-screen {
+    font-size: 24px;
+  }
 }
 
 
