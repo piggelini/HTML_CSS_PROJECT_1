@@ -1,3 +1,20 @@
+h1, h2, h3 {
+  font-family: "Baloo 2";
+}
+
+p {
+  font-family: "Sulphur Point", "sans-serif";
+  font-size: 18px;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
 body {
   margin: 0;
   background: #F5F3F2;
@@ -107,7 +124,7 @@ header {
   color: #F5F3F2;
   margin: 10px;
   font-size: 50px;
-  text-shadow: 1px 1px black;
+  text-shadow: 1px 1px #23272A;
 }
 
 @media (min-width: 769px) {
@@ -207,10 +224,30 @@ footer p {
 }
 
 .footer-nav ul a:hover {
-  color: white;
+  color: #F5F3F2;
 }
 
 .footer-nav ul :not(:last-of-type) {
-  border-right: 1px solid black;
+  border-right: 1px solid #23272A;
+}
+
+.recensioner-sida h2 {
+  display: none;
+}
+
+.recensioner-sida hr {
+  border-top: 2px solid #B5D07D;
+}
+
+.recension {
+  background-color: #F5F3F2;
+}
+
+.recension hr {
+  border-top: solid 1px #B5D07D;
+}
+
+.fa-star {
+  color: #ED6591;
 }
 /*# sourceMappingURL=style.css.map */
