@@ -182,19 +182,37 @@ footer {
     }
 }
 
+//recensioner
+
 .recensioner-sida {
   h2 {
     display: none;
   }
   hr {
     border-top: 2px solid $green;
+    margin: 0 1em;
   }
 }
 
 .recension {
   background-color: $white;
+  padding: 2em;
   hr {
     border-top: solid 1px $green;
+    margin: 0;
+  }
+  h3 {
+    margin: 0;
+  }
+  p {
+    margin: 0;
+  }
+}
+
+.rating {
+  display: flex;;
+  p {
+    margin: 0 10px;
   }
 }
 

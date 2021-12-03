@@ -237,14 +237,35 @@ footer p {
 
 .recensioner-sida hr {
   border-top: 2px solid #B5D07D;
+  margin: 0 1em;
 }
 
 .recension {
   background-color: #F5F3F2;
+  padding: 2em;
 }
 
 .recension hr {
   border-top: solid 1px #B5D07D;
+  margin: 0;
+}
+
+.recension h3 {
+  margin: 0;
+}
+
+.recension p {
+  margin: 0;
+}
+
+.rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.rating p {
+  margin: 0 10px;
 }
 
 .fa-star {
