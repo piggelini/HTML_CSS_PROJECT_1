@@ -11,14 +11,23 @@ p {
   font-family: $text, "sans-serif";
   font-weight: bold;
   font-size: 18px;
+  @include for-small-screen {
+    font-size: 24px;
+  }
 }
 
 h2 {
   font-size: 50px;
+  @include for-small-screen {
+    font-size: 72px;
+  }
 }
 
 h3 {
   font-size: 24px;
+  @include for-small-screen {
+    font-size: 34px;
+  }
 }
 
 //Other
