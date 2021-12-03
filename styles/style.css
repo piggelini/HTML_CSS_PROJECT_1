@@ -241,6 +241,12 @@ footer p {
   margin: 0 1em;
 }
 
+@media (min-width: 481px) {
+  .recensioner-sida hr {
+    margin: 0 5em;
+  }
+}
+
 .recension {
   background-color: #F5F3F2;
   padding: 2em;
@@ -257,6 +263,12 @@ footer p {
 
 .recension p {
   margin: 20px 0px;
+}
+
+@media (min-width: 481px) {
+  .recension {
+    margin: 0 5em;
+  }
 }
 
 .rating {
