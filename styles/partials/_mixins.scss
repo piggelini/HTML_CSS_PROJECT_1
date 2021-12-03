@@ -13,13 +13,13 @@
 }
 
 @mixin for-large-screen {
-  @media (min-wdith:1025px){
+  @media (min-width:1025px){
     @content;
   }
 }
 
 @mixin for-extra-large-screen {
-  @media (min-wdith:1201px) {
+  @media (min-width:1201px) {
     @content;
   }
 }
