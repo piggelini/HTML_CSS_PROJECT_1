@@ -107,7 +107,7 @@ header {
   color: #F5F3F2;
   margin: 10px;
   font-size: 50px;
-  text-shadow: 1px 1px black;
+  text-shadow: 1px 1px #23272A;
 }
 
 @media (min-width: 769px) {
@@ -207,10 +207,10 @@ footer p {
 }
 
 .footer-nav ul a:hover {
-  color: white;
+  color: #F5F3F2;
 }
 
 .footer-nav ul :not(:last-of-type) {
-  border-right: 1px solid black;
+  border-right: 1px solid #23272A;
 }
 /*# sourceMappingURL=style.css.map */

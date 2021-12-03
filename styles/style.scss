@@ -83,7 +83,7 @@ header {
     color: $white;
     margin:10px;
     font-size: 50px;
-    text-shadow: 1px 1px black;
+    text-shadow: 1px 1px $black;
 
     @include for-small-screen{
         display: none;
@@ -151,14 +151,15 @@ footer {
             padding: 0 8px 0 8px;
 
             &:hover {
-                color: white;
+                color: $white;
             }
         }
 
         :not(:last-of-type){ 
-            border-right: 1px solid black;
+            border-right: 1px solid $black;
         }
     }
 }
+
 
 
