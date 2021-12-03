@@ -1,18 +1,37 @@
 h1, h2, h3 {
-  font-family: "Baloo 2";
+  font-family: "Baloo 2", "sans-serif";
 }
 
 p {
   font-family: "Sulphur Point", "sans-serif";
+  font-weight: bold;
   font-size: 18px;
+}
+
+@media (min-width: 769px) {
+  p {
+    font-size: 24px;
+  }
 }
 
 h2 {
   font-size: 50px;
 }
 
+@media (min-width: 769px) {
+  h2 {
+    font-size: 72px;
+  }
+}
+
 h3 {
   font-size: 24px;
+}
+
+@media (min-width: 769px) {
+  h3 {
+    font-size: 34px;
+  }
 }
 
 body {
@@ -231,20 +250,105 @@ footer p {
   border-right: 1px solid #23272A;
 }
 
+.recensioner-sida {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .recensioner-sida h2 {
   display: none;
+  text-align: center;
+}
+
+@media (min-width: 769px) {
+  .recensioner-sida h2 {
+    display: inline-block;
+  }
 }
 
 .recensioner-sida hr {
   border-top: 2px solid #B5D07D;
+  margin: 0 1em;
+}
+
+@media (min-width: 481px) {
+  .recensioner-sida hr {
+    margin: 0 5em;
+  }
+}
+
+@media (min-width: 769px) {
+  .recensioner-sida hr {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .recensioner-sida {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(47.92%, #f5dad0), to(#fbf8e7));
+    background-image: linear-gradient(180deg, #f5dad0 47.92%, #fbf8e7 100%);
+    padding: 1em 2em;
+  }
+}
+
+@media (min-width: 769px) {
+  .recension-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .recension {
   background-color: #F5F3F2;
+  padding: 2em;
 }
 
 .recension hr {
   border-top: solid 1px #B5D07D;
+  margin: 0;
+}
+
+.recension h3 {
+  margin: 0;
+}
+
+.recension p {
+  margin: 20px 0px;
+}
+
+@media (min-width: 481px) {
+  .recension {
+    margin: 0 5em;
+  }
+}
+
+@media (min-width: 769px) {
+  .recension {
+    margin: 1em;
+  }
+}
+
+.rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.rating p {
+  margin: 0 10px;
 }
 
 .fa-star {
