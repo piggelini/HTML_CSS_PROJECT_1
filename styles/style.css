@@ -213,4 +213,20 @@ footer p {
 .footer-nav ul :not(:last-of-type) {
   border-right: 1px solid #23272A;
 }
+
+.recensioner-sida h2 {
+  display: none;
+}
+
+.recensioner-sida hr {
+  border-top: 2px solid #B5D07D;
+}
+
+.recension hr {
+  border-top: solid 1px #B5D07D;
+}
+
+.fa-star {
+  color: #ED6591;
+}
 /*# sourceMappingURL=style.css.map */

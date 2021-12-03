@@ -161,5 +161,23 @@ footer {
     }
 }
 
+.recensioner-sida {
+  h2 {
+    display: none;
+  }
+  hr {
+    border-top: 2px solid $green;
+  }
+}
+
+.recension {
+  hr {
+    border-top: solid 1px $green;
+  }
+}
+
+.fa-star {
+  color:$cerise;
+}
 
 
