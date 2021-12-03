@@ -1,9 +1,10 @@
 h1, h2, h3 {
-  font-family: "Baloo 2";
+  font-family: "Baloo 2", "sans-serif";
 }
 
 p {
   font-family: "Sulphur Point", "sans-serif";
+  font-weight: bold;
   font-size: 18px;
 }
 

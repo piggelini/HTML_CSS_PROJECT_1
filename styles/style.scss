@@ -4,11 +4,12 @@
 // text
 
 h1, h2, h3 {
-  font-family: $heading;
+  font-family: $heading, "sans-serif";
 }
 
 p {
   font-family: $text, "sans-serif";
+  font-weight: bold;
   font-size: 18px;
 }
 
