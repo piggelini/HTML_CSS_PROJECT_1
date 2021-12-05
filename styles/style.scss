@@ -30,6 +30,15 @@ h3 {
   }
 }
 
+h4 {
+  font-family: $text, "sans-serif";
+  font-weight: bold;
+  font-size: 24px;
+  @include for-small-screen {
+    font-size: 30px;
+  }
+}
+
 //Other
 
 body{
@@ -192,6 +201,96 @@ footer {
         }
     }
 }
+//meny
+.meny-sida {
+  //bakgrund
+  background-image:url(/images/menyImgMobile.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  @include for-small-screen {
+    background-image:url(/images/menyImgDesktop.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  }
+
+  display: flex;
+  flex-direction: column;
+
+  //rubriker position
+  h2 {
+    text-align: center;
+  }
+  h3 {
+    margin:5px 0;
+    text-align: center;
+  }
+
+  //wrapper runt juicerna och smoothies tillsammans
+  .meny-wrapper {
+    display:flex;
+    flex-direction: column;
+
+    //wrapper runt produkter (först de 6 juicerna, sedan samma sak på de 4 smoothiesarna)
+    .product-wrapper {
+      display: flex;
+      flex-direction: column;
+      @include for-small-screen {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      @include for-large-screen {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+      }
+      
+      //wrapper runt enskild product
+      .product-box {
+        display: flex;
+        flex-direction: row;
+        height:170px;
+        max-width: 769px;
+        margin: 5px 0;
+        background-color: $white;
+        @include for-small-screen {
+          height:220px;
+          width: 600px;
+          margin: 5px 5px;
+        }
+
+        //produktbild
+        .product-img {
+          margin: 15px 30px;
+          width: 140px;
+          @include for-small-screen {
+            width: 180px;
+          }
+        }
+
+        //produkt rubrik och text
+        .product-info {
+          display:flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          width: 450px;
+          h4{
+            height: 2px;
+          }
+          p {
+            height: 2px;;
+          }
+        }
+      }
+    }
+  }
+}
+/* image 3 */
+
+
+
 
 //recensioner
 
