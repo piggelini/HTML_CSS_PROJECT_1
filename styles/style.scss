@@ -1,40 +1,90 @@
 @import "partials/variables";
 @import "partials/mixins";
 
+// text
+
+h1, h2, h3 {
+  font-family: $heading, "sans-serif";
+}
+
+p {
+  font-family: $text, "sans-serif";
+  font-weight: bold;
+  font-size: 18px;
+  @include for-small-screen {
+    font-size: 24px;
+  }
+}
+
+h2 {
+  font-size: 50px;
+  @include for-small-screen {
+    font-size: 72px;
+  }
+}
+
+h3 {
+  font-size: 24px;
+  @include for-small-screen {
+    font-size: 34px;
+  }
+}
+
+h4 {
+  font-family: $text, "sans-serif";
+  font-weight: bold;
+  font-size: 24px;
+  @include for-small-screen {
+    font-size: 30px;
+  }
+}
+
+//Other
+
 body{
     margin:0;
     background: $white;
     color: $black;
+    min-height: 100vh;
+}
+
 .wrapper{
     display:flex;
     flex-direction: column;
     position: relative;
     min-height: 100%;
+}
 
 header {
     display: flex;
     flex-direction: column;
-    position:fixed;
+    position: sticky;
+    top: 0;
     min-width: 100%;
+}
     
 
 
-    .header-top {
-        display:flex;
-        justify-content: space-between;
+.header-top {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background: $green;
+
+    .Logo {
+        display: flex;
+        flex-direction: row;
         align-items: center;
-        height: 80px;
-        background: $green;
 
-        .Logo {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            
-
-            a:nth-of-type(2) {
-                display: none;
-            
+        img{
+            width: 63px;
+            margin-left:10px;
+        }
+                
+        a:nth-of-type(2) {
+            display: none;
+                
             @include for-tablet {
                 display: block;
                 text-decoration: none;
@@ -43,66 +93,65 @@ header {
                 text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
                 font-size: 25px;
                 font-family: $heading;
-            
+                
             }
         }
-        }
-        img{
-            width: 63px;
-            margin-left:10px;
-        }
-
-        .header-nav {
-            display: none;
-
-            @include for-small-screen{
-                display: block;
-
-                ul{
-                    display:flex;
-                    flex-direction: row;
-                    list-style-type: none;
-                    color: $black;
-
-                    a{
-                        text-decoration: none;
-                        color: $black;
-                        margin: 10px;
-                    }
-                }
-            }
-
-
-        }
-
-        .fa-bars {
-            color: $white;
-            margin:10px;
-            font-size: 50px;
-            text-shadow: 1px 1px black;
-
-            @include for-small-screen{
-                display: none;
-            }
-        }
-
-    }
-
-    .header-bottom {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height:31px;
-        background: $coral;
-        color: $black;
-        font-family: $text;
-        font-size: 12px;
-        font-weight: bold;
     }
 }
 
+.header-nav {
+    display: none;
+
+    @include for-small-screen{
+        display: block;
+
+        ul{
+            display:flex;
+            flex-direction: row;
+            list-style-type: none;
+            color: $black;
+
+            a{
+                text-decoration: none;
+                color: $black;
+                margin: 10px;
+            }
+        }
+    }
+}
+
+.fa-bars {
+    color: $white;
+    margin:10px;
+    font-size: 50px;
+    text-shadow: 1px 1px $black;
+
+    @include for-small-screen{
+        display: none;
+    }
+}
+
+
+.header-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:31px;
+    background: $coral;
+    color: $black;
+    font-family: $text;
+    font-size: 12px;
+    font-weight: bold;
+                
+    @include for-small-screen{ 
+        h2{
+            display: none;
+        }
+    } 
+}
+
 .content{
-    height: 600px;
+    height: 650px;
 }
 
 footer {
@@ -115,14 +164,24 @@ footer {
     align-items: center;
     font-family: $text;
     font-weight: bold;
+<<<<<<< HEAD
     font-size: 13px;
     
+=======
+    font-size: 14px;
+    position: absolute;
+    bottom:0;
+>>>>>>> a49ed4007bb1e43b98d576ef0aeacafcb1f5b3b2
 
+    p {
+        margin: 0;
+        }
+}
 
-    .footer-nav{
-        display: flex;
-        justify-content: center;
-        
+.footer-nav{
+    display: flex;
+    justify-content: center;
+            
     ul {
         list-style-type:none;
         display: flex;
@@ -132,33 +191,194 @@ footer {
         margin:0;
         padding: 0;
 
-    a {
-        text-decoration: none;
-        color: $black;
-        padding: 0 8px 0 8px;
+        a {
+            text-decoration: none;
+            color: $black;
+            padding: 0 8px 0 8px;
 
+            &:hover {
+                color: $white;
+            }
+        }
 
-    &:hover {
-        color: white;
-    }
-
-
-}
-
-:not(:last-of-type){ 
-    border-right: 1px solid black;
-}
-
-
-}
-
-
-
-    }
-    p {
-        margin: 0;
+        :not(:last-of-type){ 
+            border-right: 1px solid $black;
+        }
     }
 }
 
+//meny
+.meny-sida {
+  //bakgrund
+  background-image:url(/images/menyImgMobile.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  @include for-small-screen {
+    background-image:url(/images/menyImgDesktop.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  }
+
+  display: flex;
+  flex-direction: column;
+
+  //rubriker position
+  h2 {
+    text-align: center;
+  }
+  h3 {
+    margin:5px 0;
+    text-align: center;
+  }
+
+  //wrapper runt juicerna och smoothies tillsammans
+  .meny-wrapper {
+    display:flex;
+    flex-direction: column;
+
+    //wrapper runt produkter (först de 6 juicerna, sedan samma sak på de 4 smoothiesarna)
+    .product-wrapper {
+      display: flex;
+      flex-direction: column;
+      @include for-small-screen {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      @include for-large-screen {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+      }
+      
+      //wrapper runt enskild product
+      .product-box {
+        display: flex;
+        flex-direction: row;
+        height:170px;
+        max-width: 769px;
+        margin: 5px 0;
+        background-color: $white;
+        @include for-small-screen {
+          height:220px;
+          width: 600px;
+          margin: 5px 5px;
+        }
+
+        //produktbild
+        .product-img {
+          margin: 15px 30px;
+          width: 140px;
+          @include for-small-screen {
+            width: 180px;
+          }
+        }
+
+        //produkt rubrik och text
+        .product-info {
+          display:flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          width: 450px;
+          h4{
+            height: 2px;
+          }
+          p {
+            height: 2px;;
+          }
+        }
+      }
+    }
+  }
 }
+/* image 3 */
+
+
+
+
+//recensioner
+
+.recensioner-sida {
+  display: flex;
+  flex-direction: column;
+  h2 {
+    display: none;
+    text-align: center;
+    @include for-small-screen {
+      display: inline-block;
+      margin: 0;
+    }
+  }
+  .recension-divider {
+    border-top: 2px solid $green;
+    margin: 0 1em;
+    @include for-tablet {
+      margin: 0 5em;
+    }
+    @include for-small-screen {
+      display: none;
+    }
+  }
+  @include for-small-screen {
+    @include background-gradient;
+    padding: 1em 2em;
+  }
 }
+
+.recension-wrapper {
+  @include for-small-screen {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.recension {
+  background-color: $white;
+  padding: 2em;
+  hr {
+    border-top: solid 1px $green;
+    margin: 0;
+  }
+  h3 {
+    margin: 0;
+  }
+  p {
+    margin: 20px 0px;
+    @include for-small-screen {
+      max-width: 20em;
+    }
+    @include for-extra-large-screen {
+      max-width: 25em;
+    }
+  }
+  @include for-tablet {
+    margin: 0 5em;
+  }
+  @include for-small-screen {
+    margin: 1em;
+    box-shadow: $white-box-shadow;
+  }
+  @include for-extra-large-screen {
+    margin: 2em;
+  }
+}
+
+.rating {
+  display: flex;
+  p {
+    margin: 0 10px;
+  }
+}
+
+.fa-star {
+  color:$cerise;
+  font-size: 18px;
+  @include for-small-screen {
+    font-size: 24px;
+  }
+}
+
+
