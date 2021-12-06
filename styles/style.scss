@@ -396,12 +396,6 @@ footer {
   }
   p {
     margin: 20px 0px;
-    @include for-small-screen {
-      max-width: 20em;
-    }
-    @include for-extra-large-screen {
-      max-width: 25em;
-    }
   }
   @include for-tablet {
     margin: 0 5em;
@@ -409,6 +403,9 @@ footer {
   @include for-small-screen {
     margin: 1em;
     box-shadow: $white-box-shadow;
+  }
+  @include for-large-screen {
+    min-width: 20em;
   }
   @include for-extra-large-screen {
     margin: 2em;
