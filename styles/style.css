@@ -382,8 +382,8 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-shadow: 0px 0px 20px rgba(15, 8, 8, 0.05);
-          box-shadow: 0px 0px 20px rgba(15, 8, 8, 0.05);
+  -webkit-box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.05);
 }
 
 .index-coming-soon .articles div h4 {
