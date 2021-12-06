@@ -410,7 +410,7 @@ main{
 }
 
 .recension-wrapper {
-  @include for-small-screen {
+  @include for-large-screen {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -429,12 +429,6 @@ main{
   }
   p {
     margin: 20px 0px;
-    @include for-small-screen {
-      max-width: 20em;
-    }
-    @include for-extra-large-screen {
-      max-width: 25em;
-    }
   }
   @include for-tablet {
     margin: 0 5em;
@@ -442,6 +436,9 @@ main{
   @include for-small-screen {
     margin: 1em;
     box-shadow: $white-box-shadow;
+  }
+  @include for-large-screen {
+    min-width: 20em;
   }
   @include for-extra-large-screen {
     margin: 2em;
@@ -464,10 +461,6 @@ main{
 }
 
 //Kontakt sidan//
-.header-bottom-contact-site h2{ //H2 i header
-  font-size: 30px;
-}
-
 .main-content-contact{ //Main
   padding: 20px 0px 0px 0px;
 
@@ -487,18 +480,26 @@ main{
 .content-contact { //div som wrappar alla html element förutom h2:an  
   padding: 0px 10px 0px 10px;
 
-  h3 { //Alla h3 
-    font-size: 22px;
+  h3 { // Alla h3:or
+    margin: 5px 0px 5px 0px;
   }
-  
+}
+
+.form-contact { //Formuläret med email input, anledning till kontakt, fritext och knappen skicka
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+    font-size: 20px;
+  }
+
   input { //Input fältet 
-    width: 97.3%;
     height: 20px;
     font-family: $text;
   }
 
   select { //Select 
-    width: 100%;
     height: 25px;
     font-family: $text;
     padding: 3px 0px 3px 0px;
@@ -513,7 +514,6 @@ main{
   }
 
   textarea { //Fritext input
-    width: 98%;
     height: 100px;
     font-family: $text;
   }
@@ -522,6 +522,7 @@ main{
     width: 100%;
     height: 30px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border: none;
     border-radius: 10px;
     margin: 20px 0px;
     background-color: $cerise;
@@ -536,6 +537,3 @@ main{
   }
 }
 
-.footer-contact-site { //footer
-  position: relative;
-}
