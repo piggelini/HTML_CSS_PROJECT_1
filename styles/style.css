@@ -213,13 +213,9 @@ footer {
           align-items: center;
   font-family: "Sulphur Point";
   font-weight: bold;
-<<<<<<< HEAD
-  font-size: 13px;
-=======
   font-size: 14px;
   position: absolute;
   bottom: 0;
->>>>>>> a49ed4007bb1e43b98d576ef0aeacafcb1f5b3b2
 }
 
 footer p {
