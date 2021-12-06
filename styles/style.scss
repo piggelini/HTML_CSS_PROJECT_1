@@ -38,6 +38,19 @@ h4 {
     font-size: 30px;
   }
 }
+//"Active" page styling
+nav a.hamburger-active {
+  color: $cerise;
+  text-decoration: underline;
+};
+
+nav a.header-active {
+  color:aqua; //Celina, detta är bara filler styling, du kan ändra till rätt
+};
+
+footer a.footer-active {
+  color:aqua; //Celina, detta är bara filler styling, du kan ändra till rätt
+}
 
 //Other
 
@@ -119,16 +132,44 @@ header {
         }
     }
 }
+.hamburger-dropdown {
+  position: relative;
+  text-align: right;
+}
 
-.fa-bars {
+.fas.fa-bars {
     color: $white;
     margin:10px;
     font-size: 50px;
-    text-shadow: 1px 1px $black;
 
     @include for-small-screen{
         display: none;
+    };
+};
+
+.dropdown-content {
+  position: absolute;
+  background-color: $white;
+  width: 65vw;
+  right: 0;
+  top: 75px;
+  height: 70vh;
+  padding: 30px 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+
+  a {
+    display: block;
+
+    text-decoration: none;
+    color: $black;
+    font-family: $text, "sans-serif";
+    font-weight: bold;
+    font-size: 36px;
+
+    &:hover {
+      color: $cerise;
     }
+  }
 }
 
 
