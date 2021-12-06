@@ -61,19 +61,21 @@
             <h3>Hitta till oss</h3>
             <p>Apelsinvägen 13 <br> 123 45 Plommondalen <br> 08-000 310 00 <br> kontakt@juiced.com</p>
             <br>
-            <h3>Skicka ett meddelande till oss</h3>
-            <label for="email"></label>
-            <input type="text" class="input_email" id="email" placeholder="Mejladress">
-            <label for="contact_reason"></label>
-            <select name="reason_for_contact" id="contact_reason" number="3" required>
-              <option value="" disabled selected hidden>Anledning till kontakt</option>
-              <option value="product_question">Köp av produkt/tjänst</option>
-              <option value="company_question">Frågor om Juiced</option>
-              <option value="feedback_webbsite">Synpunkter på webbplats</option>
-            </select>
-            <label for="input_message"></label>
-            <textarea type="text" id="input_message" placeholder="Fritext..."></textarea>
-            <button>Skicka</button>
+            <form class="form-contact">
+                <h3>Skicka ett meddelande till oss</h3>
+                <label for="email"></label>
+                <input type="text" class="input_email" id="email" placeholder="Mejladress">
+                <label for="contact_reason"></label>
+                <select name="reason_for_contact" id="contact_reason" number="3" required>
+                <option value="" disabled selected hidden>Anledning till kontakt</option>
+                <option value="product_question">Köp av produkt/tjänst</option>
+                <option value="company_question">Frågor om Juiced</option>
+                <option value="feedback_webbsite">Synpunkter på webbplats</option>
+                </select>
+                <label for="input_message"></label>
+                <textarea type="text" id="input_message" placeholder="Fritext..."></textarea>
+                <button>Skicka</button>
+            </form>
 
           </div>
 

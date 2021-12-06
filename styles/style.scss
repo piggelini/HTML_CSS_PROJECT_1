@@ -395,18 +395,26 @@ footer {
 .content-contact { //div som wrappar alla html element förutom h2:an  
   padding: 0px 10px 0px 10px;
 
-  h3 { //Alla h3 
-    font-size: 22px;
+  h3 { // Alla h3:or
+    margin: 5px 0px 5px 0px;
   }
-  
+}
+
+.form-contact { //Formuläret med email input, anledning till kontakt, fritext och knappen skicka
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+    font-size: 20px;
+  }
+
   input { //Input fältet 
-    width: 97.3%;
     height: 20px;
     font-family: $text;
   }
 
   select { //Select 
-    width: 100%;
     height: 25px;
     font-family: $text;
     padding: 3px 0px 3px 0px;
@@ -421,7 +429,6 @@ footer {
   }
 
   textarea { //Fritext input
-    width: 98%;
     height: 100px;
     font-family: $text;
   }
@@ -444,3 +451,4 @@ footer {
     @include background-gradient;
   }
 }
+
