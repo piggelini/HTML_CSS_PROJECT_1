@@ -151,6 +151,8 @@ header {
 }
 
 
+
+
 footer {
     min-width:100%;
     height: 72px;
@@ -373,4 +375,24 @@ footer {
   }
 }
 
+//Kontakt sidan
+.main-content-contact{ //main, wrappar hela sidan
+  @include for-tablet {
+    @include background-gradient;
+  }
+  
+  h2 {
+    display: none;
+  }
+}
 
+.content-contact { //div som wrappar alla html element förutom h2:an   
+  @include for-tablet {
+    @include background-gradient;
+  }
+
+  img {
+    width: 100%;
+  }
+
+}
