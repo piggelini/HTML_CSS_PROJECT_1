@@ -377,7 +377,7 @@ footer {
 }
 
 .recension-wrapper {
-  @include for-small-screen {
+  @include for-large-screen {
     display: flex;
     flex-direction: row;
     justify-content: center;
