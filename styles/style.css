@@ -528,7 +528,7 @@ footer p {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1025px) {
   .recension-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
