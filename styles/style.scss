@@ -53,6 +53,7 @@ body{
     flex-direction: column;
     position: relative;
     min-height: 100%;
+    @include background-gradient;
 }
 
 header {
@@ -201,6 +202,60 @@ footer {
     }
 }
 
+// index/startsida
+
+.index {
+    display:flex;
+    flex-direction:column;
+    margin-bottom: 100px;
+    
+}
+
+.index-presentation{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+
+    h2{
+        margin-bottom:0;
+    }
+
+    p{
+        text-align: center;
+    }
+
+    img{
+        max-width: 100%;
+        margin: 2em;
+    }
+}
+
+.index-coming-soon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        max-width:100%;
+        margin-top: 2em;
+        margin-bottom: 0;
+    }
+
+    div {
+        max-width: 100%;
+        height: 6em;
+        background: $white;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 0px 20px rgba(15, 8, 8, 0.05);
+
+        h4{
+            margin:0;
+        }
+    }
+}
+
 //meny
 .meny-sida {
   //bakgrund
@@ -322,7 +377,7 @@ footer {
 }
 
 .recension-wrapper {
-  @include for-small-screen {
+  @include for-large-screen {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -341,12 +396,6 @@ footer {
   }
   p {
     margin: 20px 0px;
-    @include for-small-screen {
-      max-width: 20em;
-    }
-    @include for-extra-large-screen {
-      max-width: 25em;
-    }
   }
   @include for-tablet {
     margin: 0 5em;
@@ -354,6 +403,9 @@ footer {
   @include for-small-screen {
     margin: 1em;
     box-shadow: $white-box-shadow;
+  }
+  @include for-large-screen {
+    min-width: 20em;
   }
   @include for-extra-large-screen {
     margin: 2em;
