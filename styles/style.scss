@@ -280,7 +280,7 @@ main{
         display:flex;
         align-items: center;
         justify-content: center;
-        box-shadow: 0px 0px 20px rgba(15, 8, 8, 0.05);
+        box-shadow: $white-box-shadow;
         h4{
             margin:0;
         }
