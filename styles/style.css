@@ -445,6 +445,8 @@ footer p {
   .recensioner-sida {
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(47.92%, #f5dad0), to(#fbf8e7));
     background-image: linear-gradient(180deg, #f5dad0 47.92%, #fbf8e7 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     padding: 1em 2em;
   }
 }
