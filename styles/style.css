@@ -184,6 +184,7 @@ header {
 }
 
 .dropdown-content {
+  display: none;
   position: absolute;
   background-color: #F5F3F2;
   width: 65vw;
@@ -206,6 +207,10 @@ header {
 
 .dropdown-content a:hover {
   color: #ED6591;
+}
+
+.show {
+  display: block;
 }
 
 .header-bottom {

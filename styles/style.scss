@@ -148,6 +148,8 @@ header {
 };
 
 .dropdown-content {
+  display: none;
+
   position: absolute;
   background-color: $white;
   width: 65vw;
@@ -170,6 +172,10 @@ header {
       color: $cerise;
     }
   }
+}
+
+.show {
+  display: block;
 }
 
 
