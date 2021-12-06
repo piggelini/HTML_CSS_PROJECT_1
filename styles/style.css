@@ -153,15 +153,14 @@ header {
   }
 }
 
-.fa-bars {
+.fas.fa-bars {
   color: #F5F3F2;
   margin: 10px;
   font-size: 50px;
-  text-shadow: 1px 1px #23272A;
 }
 
 @media (min-width: 769px) {
-  .fa-bars {
+  .fas.fa-bars {
     display: none;
   }
 }

@@ -120,16 +120,15 @@ header {
     }
 }
 
-.fa-bars {
+.fas.fa-bars {
     color: $white;
     margin:10px;
     font-size: 50px;
-    text-shadow: 1px 1px $black;
 
     @include for-small-screen{
         display: none;
-    }
-}
+    };
+};
 
 
 .header-bottom {
