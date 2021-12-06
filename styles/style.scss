@@ -38,6 +38,19 @@ h4 {
     font-size: 30px;
   }
 }
+//"Active" page styling
+nav a.hamburger-active {
+  color: $cerise;
+  text-decoration: underline;
+};
+
+nav a.header-active {
+  color:aqua; //Celina, detta är bara filler styling, du kan ändra till rätt
+};
+
+footer a.footer-active {
+  color:aqua; //Celina, detta är bara filler styling, du kan ändra till rätt
+}
 
 //Other
 

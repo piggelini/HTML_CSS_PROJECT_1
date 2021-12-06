@@ -46,6 +46,19 @@ h4 {
   }
 }
 
+nav a.hamburger-active {
+  color: #ED6591;
+  text-decoration: underline;
+}
+
+nav a.header-active {
+  color: aqua;
+}
+
+footer a.footer-active {
+  color: aqua;
+}
+
 body {
   margin: 0;
   background: #F5F3F2;
