@@ -210,7 +210,7 @@ footer {
   font-family: "Sulphur Point";
   font-weight: bold;
   font-size: 13px;
-  position: absolute;
+  position: relative;
   bottom: 0;
 }
 
@@ -533,10 +533,6 @@ footer p {
   }
 }
 
-.header-bottom-contact-site h2 {
-  font-size: 30px;
-}
-
 .main-content-contact {
   padding: 20px 0px 0px 0px;
 }
@@ -598,6 +594,7 @@ footer p {
   height: 30px;
   -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border: none;
   border-radius: 10px;
   margin: 20px 0px;
   background-color: #ED6591;
@@ -614,9 +611,5 @@ footer p {
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
-}
-
-.footer-contact-site {
-  position: relative;
 }
 /*# sourceMappingURL=style.css.map */
