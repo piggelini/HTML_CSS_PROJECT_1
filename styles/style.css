@@ -66,6 +66,13 @@ body {
   min-height: 100vh;
 }
 
+main {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(47.92%, #f5dad0), to(#fbf8e7));
+  background-image: linear-gradient(180deg, #f5dad0 47.92%, #fbf8e7 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -176,6 +183,34 @@ header {
   }
 }
 
+.header-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 31px;
+  background: #F9A196;
+  color: #23272A;
+  font-family: "Sulphur Point", "sans-serif";
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.header-bottom h2 {
+  font-size: 20px;
+}
+
+@media (min-width: 769px) {
+  .header-bottom h2 {
+    display: none;
+  }
+}
+
 .hamburger-dropdown {
   position: relative;
   text-align: right;
@@ -221,34 +256,6 @@ header {
 
 .show {
   display: block;
-}
-
-.header-bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 31px;
-  background: #F9A196;
-  color: #23272A;
-  font-family: "Sulphur Point", "sans-serif";
-  font-size: 12px;
-  font-weight: bold;
-}
-
-.header-bottom h2 {
-  font-size: 20px;
-}
-
-@media (min-width: 769px) {
-  .header-bottom h2 {
-    display: none;
-  }
 }
 
 footer {
@@ -319,13 +326,6 @@ footer p {
 
 .footer-nav ul :not(:last-of-type) {
   border-right: 1px solid #23272A;
-}
-
-main {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(47.92%, #f5dad0), to(#fbf8e7));
-  background-image: linear-gradient(180deg, #f5dad0 47.92%, #fbf8e7 100%);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 .index {
