@@ -38,6 +38,7 @@ h4 {
     font-size: 30px;
   }
 }
+
 //"Active" page styling
 nav a.hamburger-active {
   color: $cerise;
@@ -125,9 +126,20 @@ header {
             color: $black;
 
             a{
+                font-size: 20px;
+                font-family: $text, "sans-serif";
+                font-weight: bold;
                 text-decoration: none;
                 color: $black;
-                margin: 10px;
+                margin: 10px 30px 10px 10px;
+
+                &:hover {
+                  color: $white;
+                }
+            }
+
+            a.selected {
+              text-decoration: underline;
             }
         }
     }
@@ -161,7 +173,6 @@ header {
 
   a {
     display: block;
-
     text-decoration: none;
     color: $black;
     font-family: $text, "sans-serif";
@@ -186,10 +197,14 @@ header {
     height:31px;
     background: $coral;
     color: $black;
-    font-family: $text;
+    font-family: $text, "sans-serif";
     font-size: 12px;
     font-weight: bold;
-                
+    
+    h2 {
+      font-size: 20px;
+    }
+
     @include for-small-screen{ 
         h2{
             display: none;
@@ -208,7 +223,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: $text;
+    font-family: $text, "sans-serif";
     font-weight: bold;
     font-size: 13px;
     position: relative;
@@ -527,7 +542,7 @@ main{
     width: 100%;
   }
 
-  @include for-tablet { //Vid större skärm (från tablet och uppåt) byt bakgrundsfärg
+  @include for-tablet { //Vid större skärm (från tablet och uppåt)
     @include background-gradient;
   }
 }
@@ -551,12 +566,12 @@ main{
 
   input { //Input fältet 
     height: 20px;
-    font-family: $text;
+    font-family: $text, "sans-serif";
   }
 
   select { //Select 
     height: 25px;
-    font-family: $text;
+    font-family: $text, "sans-serif";
     padding: 3px 0px 3px 0px;
 
     option { //Val i select
@@ -570,7 +585,7 @@ main{
 
   textarea { //Fritext input
     height: 100px;
-    font-family: $text;
+    font-family: $text, "sans-serif";
   }
 
   button { //Skicka knappen
@@ -581,7 +596,7 @@ main{
     border-radius: 10px;
     margin: 20px 0px;
     background-color: $cerise;
-    font-family: $text;
+    font-family: $text, "sans-serif";
     font-weight: bold;
     color: $black;
     font-size: 15px;
@@ -591,4 +606,5 @@ main{
     @include background-gradient;
   }
 }
+
 
