@@ -489,9 +489,13 @@ footer {
     flex-direction: row;
     justify-content: center;
   }
+  @include for-extra-large-screen {
+    margin: 0 20em;
+  }
 }
 
 .recension {
+  flex-basis:50%;
   background-color: $white;
   padding: 2em;
   hr {
