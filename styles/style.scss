@@ -210,6 +210,10 @@ header {
     font-weight: bold;
     font-size: 36px;
 
+    @include for-tablet {
+      font-size: 52px;
+    }
+
     &:hover {
       color: $cerise;
     }

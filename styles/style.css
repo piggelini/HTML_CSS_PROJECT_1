@@ -250,6 +250,12 @@ header {
   font-size: 36px;
 }
 
+@media (min-width: 481px) {
+  .dropdown-content a {
+    font-size: 52px;
+  }
+}
+
 .dropdown-content a:hover {
   color: #ED6591;
 }
