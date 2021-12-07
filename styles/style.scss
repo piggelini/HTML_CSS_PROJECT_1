@@ -62,12 +62,19 @@ body{
     min-height: 100vh;
 }
 
+//Bakgrund på alla sidors main
+main{
+  @include background-gradient;
+  }
+
 .wrapper{
     display:flex;
     flex-direction: column;
     position: relative;
     min-height: 100%;
 }
+
+//Header
 
 header {
     display: flex;
@@ -76,8 +83,6 @@ header {
     top: 0;
     min-width: 100%;
 }
-    
-
 
 .header-top {
     display:flex;
@@ -145,6 +150,31 @@ header {
         }
     }
 }
+
+.header-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:31px;
+    background: $coral;
+    color: $black;
+    font-family: $text, "sans-serif";
+    font-size: 12px;
+    font-weight: bold;
+    
+    h2 {
+      font-size: 20px;
+    }
+
+    @include for-small-screen{ 
+        h2{
+            display: none;
+        }
+    } 
+}
+
+//Hamburgarmeny
+
 .hamburger-dropdown {
   position: relative;
   text-align: right;
@@ -180,6 +210,10 @@ header {
     font-weight: bold;
     font-size: 36px;
 
+    @include for-tablet {
+      font-size: 52px;
+    }
+
     &:hover {
       color: $cerise;
     }
@@ -190,31 +224,7 @@ header {
   display: block;
 }
 
-
-.header-bottom {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height:31px;
-    background: $coral;
-    color: $black;
-    font-family: $text, "sans-serif";
-    font-size: 12px;
-    font-weight: bold;
-    
-    h2 {
-      font-size: 20px;
-    }
-
-    @include for-small-screen{ 
-        h2{
-            display: none;
-        }
-    } 
-}
-
-
-
+//Footer
 
 footer {
     min-width:100%;
@@ -264,10 +274,6 @@ footer {
     }
 }
 
-//Bakgrund på alla sidors main
-main{
-@include background-gradient;
-}
 // index/startsida
 
 .index {
@@ -456,6 +462,7 @@ main{
 .recensioner-sida {
   display: flex;
   flex-direction: column;
+  background-image: none;
   h2 {
     display: none;
     text-align: center;
@@ -486,9 +493,13 @@ main{
     flex-direction: row;
     justify-content: center;
   }
+  @include for-extra-large-screen {
+    margin: 0 20em;
+  }
 }
 
 .recension {
+  flex-basis:50%;
   background-color: $white;
   padding: 2em;
   hr {
