@@ -124,15 +124,16 @@ header {
             flex-direction: row;
             list-style-type: none;
             color: $black;
+            margin: 20px;
 
             a{
-                font-size: 20px;
+                font-size: 22px;
                 font-family: $text, "sans-serif";
                 font-weight: bold;
                 text-decoration: none;
                 color: $black;
-                margin: 10px 30px 10px 10px;
-
+                margin: 15px;
+                
                 &:hover {
                   color: $white;
                 }
@@ -532,26 +533,53 @@ main{
 
 //Kontakt sidan//
 .main-content-contact{ //Main
+  display: flex;
+  flex-direction: column;
   padding: 20px 0px 0px 0px;
 
   h2 { //H2:an
+    text-align: center;
+    margin: 0px;
     display: none;
   }
 
   img { //Bilden
+    align-self: center;
     width: 100%;
+    box-shadow: $white-box-shadow;
   }
 
-  @include for-tablet { //Vid större skärm (från tablet och uppåt)
+  @include for-tablet { //Vid större skämr (från tablet och uppåt)
+    img {
+      width: 60%;
+    }
+  }
+
+  @include for-small-screen { //Vid större skärm (från small-screen och uppåt)
     @include background-gradient;
+
+    h2 { //H2:an
+      display: block;
+    }
   }
 }
 
-.content-contact { //div som wrappar alla html element förutom h2:an  
+.content-contact { //div som wrappar alla html element förutom h2 och bilden
+  display: flex;
+  flex-direction: column;
   padding: 0px 10px 0px 10px;
 
   h3 { // Alla h3:or
     margin: 5px 0px 5px 0px;
+  }
+
+  @include for-tablet { //Vid större skämr (från tablet och uppåt)
+    width: 60%;
+    align-self: center;
+    
+    h3 {
+      font-size: 34px;
+    }
   }
 }
 
@@ -560,27 +588,8 @@ main{
   display: flex;
   flex-direction: column;
 
-  h3 {
+  h3 { //h3:an i formuläret
     font-size: 20px;
-  }
-
-  input { //Input fältet 
-    height: 20px;
-    font-family: $text, "sans-serif";
-  }
-
-  select { //Select 
-    height: 25px;
-    font-family: $text, "sans-serif";
-    padding: 3px 0px 3px 0px;
-
-    option { //Val i select
-      color: $black;
-    }
-  }
-
-  select:invalid { //Placeholder i select
-    color: gray;
   }
 
   textarea { //Fritext input
@@ -605,6 +614,80 @@ main{
   @include for-tablet { //Vid större skärm (från tablet och uppåt) byt bakgrundsfärg
     @include background-gradient;
   }
+
+  @include for-large-screen {
+
+    h3 {
+      font-size: 30px;
+    }
+
+    .input_and_select {
+      flex-direction: row;
+      justify-content: space-between;
+
+      input {
+        width: 50%;
+        height: 30px;
+        font-size: 18px;
+      }
+
+      select {
+        justify-self: flex-end;
+        width: 35%;
+        height: 36px;
+        font-size: 18px;
+      }
+    }
+
+    textarea {
+      font-size: 18px;
+    }
+
+    button {
+      align-self: center;
+      width: 40%;
+      height: 45px;
+      font-size: 24px;
+    }
+  }
 }
+
+.input_and_select { //Box med inputfält för mejl och select
+  display: flex;
+  flex-direction: column;
+
+  input { //Input fältet 
+    height: 20px;
+    font-family: $text, "sans-serif";
+    margin-bottom: 10px;
+  }
+
+  .visuallyhidden { //Gömmer label för email då den tar upp plats som gör att placering blir tokigt. Detta för att behålla tillgängligheten.
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  select { //Select 
+    height: 25px;
+    font-family: $text, "sans-serif";
+    padding: 3px 0px 3px 0px;
+    margin-bottom: 10px;
+
+    option { //Val i select
+      color: $black;
+    }
+  }
+
+  select:invalid { //Placeholder i select
+    color: gray;
+  }
+}
+
 
 
