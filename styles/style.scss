@@ -242,6 +242,7 @@ footer {
 
     p {
         margin: 0;
+        font-size: 13px;
         }
 }
 
@@ -266,6 +267,10 @@ footer {
             &:hover {
                 color: $white;
             }
+        }
+        
+        a.selected {
+          text-decoration: underline;
         }
 
         :not(:last-of-type){ 
@@ -542,53 +547,41 @@ footer {
   }
 }
 
-//Kontakt sidan//
+//Kontakt sidan 
+
 .main-content-contact{ //Main
   display: flex;
   flex-direction: column;
   padding: 20px 0px 0px 0px;
-
   h2 { //H2:an
     text-align: center;
     margin: 0px;
     display: none;
+    @include for-small-screen { //Vid större skärm (från small-screen och uppåt)
+      display: block;
+    }
   }
-
   img { //Bilden
     align-self: center;
     width: 100%;
     box-shadow: $white-box-shadow;
-  }
-
-  @include for-tablet { //Vid större skämr (från tablet och uppåt)
-    img {
+    @include for-tablet { //Vid större skärm (från tablet och uppåt)
       width: 60%;
-    }
-  }
-
-  @include for-small-screen { //Vid större skärm (från small-screen och uppåt)
-    @include background-gradient;
-
-    h2 { //H2:an
-      display: block;
     }
   }
 }
 
-.content-contact { //div som wrappar alla html element förutom h2 och bilden
+.content-contact { //Div som wrappar alla html element förutom h2 och bilden
   display: flex;
   flex-direction: column;
   padding: 0px 10px 0px 10px;
-
-  h3 { // Alla h3:or
-    margin: 5px 0px 5px 0px;
-  }
-
-  @include for-tablet { //Vid större skämr (från tablet och uppåt)
+  @include for-tablet { //Vid större skärm (från tablet och uppåt)
     width: 60%;
     align-self: center;
-    
-    h3 {
+  }
+  h3 { // Alla h3:or
+    margin: 5px 0px 5px 0px;
+    @include for-tablet { //Vid större skärm (från tablet och uppåt)
       font-size: 34px;
     }
   }
@@ -598,16 +591,19 @@ footer {
   width: 100%;
   display: flex;
   flex-direction: column;
-
   h3 { //h3:an i formuläret
     font-size: 20px;
+    @include for-large-screen { //Vid större skärm (från large-screen och uppåt)
+      font-size: 30px;
+    }
   }
-
   textarea { //Fritext input
     height: 100px;
     font-family: $text, "sans-serif";
+    @include for-large-screen { //Vid större skärm (från large-screen och uppåt)
+      font-size: 18px;
+    }
   }
-
   button { //Skicka knappen
     width: 100%;
     height: 30px;
@@ -620,41 +616,7 @@ footer {
     font-weight: bold;
     color: $black;
     font-size: 15px;
-  }
-
-  @include for-tablet { //Vid större skärm (från tablet och uppåt) byt bakgrundsfärg
-    @include background-gradient;
-  }
-
-  @include for-large-screen {
-
-    h3 {
-      font-size: 30px;
-    }
-
-    .input_and_select {
-      flex-direction: row;
-      justify-content: space-between;
-
-      input {
-        width: 50%;
-        height: 30px;
-        font-size: 18px;
-      }
-
-      select {
-        justify-self: flex-end;
-        width: 35%;
-        height: 36px;
-        font-size: 18px;
-      }
-    }
-
-    textarea {
-      font-size: 18px;
-    }
-
-    button {
+    @include for-large-screen { //Vid större skärm (från large-screen och uppåt)
       align-self: center;
       width: 40%;
       height: 45px;
@@ -663,16 +625,13 @@ footer {
   }
 }
 
-.input_and_select { //Box med inputfält för mejl och select
+.input_and_select { //Div med inputfält för mejl och select
   display: flex;
   flex-direction: column;
-
-  input { //Input fältet 
-    height: 20px;
-    font-family: $text, "sans-serif";
-    margin-bottom: 10px;
+  @include for-large-screen { //Vid större skärm (från large-screen och uppåt) 
+    flex-direction: row;
+    justify-content: space-between;
   }
-
   .visuallyhidden { //Gömmer label för email då den tar upp plats som gör att placering blir tokigt. Detta för att behålla tillgängligheten.
     border: 0;
     clip: rect(0 0 0 0);
@@ -683,22 +642,37 @@ footer {
     position: absolute;
     width: 1px;
   }
+  input { //Input fältet 
+    height: 20px;
+    font-family: $text, "sans-serif";
+    margin-bottom: 10px;
+    @include for-large-screen { //Vid större skärm (från large-screen och uppåt) 
+      width: 50%;
+      height: 30px;
+      font-size: 18px;
+    }
+  }
 
   select { //Select 
     height: 25px;
     font-family: $text, "sans-serif";
     padding: 3px 0px 3px 0px;
     margin-bottom: 10px;
-
+    &:invalid { //Placeholder i select
+      color: gray;
+    }
+    @include for-large-screen { //Vid större skärm (från large-screen och uppåt) 
+      justify-self: flex-end;
+      width: 35%;
+      height: 36px;
+      font-size: 18px;
+    }
     option { //Val i select
       color: $black;
     }
   }
-
-  select:invalid { //Placeholder i select
-    color: gray;
-  }
 }
+
 
 
 

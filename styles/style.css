@@ -290,6 +290,7 @@ footer {
 
 footer p {
   margin: 0;
+  font-size: 13px;
 }
 
 .footer-nav {
@@ -328,6 +329,10 @@ footer p {
 
 .footer-nav ul a:hover {
   color: #F5F3F2;
+}
+
+.footer-nav ul a.selected {
+  text-decoration: underline;
 }
 
 .footer-nav ul :not(:last-of-type) {
@@ -767,6 +772,12 @@ footer p {
   display: none;
 }
 
+@media (min-width: 769px) {
+  .main-content-contact h2 {
+    display: block;
+  }
+}
+
 .main-content-contact img {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -782,18 +793,6 @@ footer p {
   }
 }
 
-@media (min-width: 769px) {
-  .main-content-contact {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(47.92%, #f5dad0), to(#fbf8e7));
-    background-image: linear-gradient(180deg, #f5dad0 47.92%, #fbf8e7 100%);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
-  .main-content-contact h2 {
-    display: block;
-  }
-}
-
 .content-contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -805,10 +804,6 @@ footer p {
   padding: 0px 10px 0px 10px;
 }
 
-.content-contact h3 {
-  margin: 5px 0px 5px 0px;
-}
-
 @media (min-width: 481px) {
   .content-contact {
     width: 60%;
@@ -816,6 +811,13 @@ footer p {
         -ms-grid-row-align: center;
         align-self: center;
   }
+}
+
+.content-contact h3 {
+  margin: 5px 0px 5px 0px;
+}
+
+@media (min-width: 481px) {
   .content-contact h3 {
     font-size: 34px;
   }
@@ -836,9 +838,21 @@ footer p {
   font-size: 20px;
 }
 
+@media (min-width: 1025px) {
+  .form-contact h3 {
+    font-size: 30px;
+  }
+}
+
 .form-contact textarea {
   height: 100px;
   font-family: "Sulphur Point", "sans-serif";
+}
+
+@media (min-width: 1025px) {
+  .form-contact textarea {
+    font-size: 18px;
+  }
 }
 
 .form-contact button {
@@ -856,42 +870,7 @@ footer p {
   font-size: 15px;
 }
 
-@media (min-width: 481px) {
-  .form-contact {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(47.92%, #f5dad0), to(#fbf8e7));
-    background-image: linear-gradient(180deg, #f5dad0 47.92%, #fbf8e7 100%);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
-}
-
 @media (min-width: 1025px) {
-  .form-contact h3 {
-    font-size: 30px;
-  }
-  .form-contact .input_and_select {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .form-contact .input_and_select input {
-    width: 50%;
-    height: 30px;
-    font-size: 18px;
-  }
-  .form-contact .input_and_select select {
-    justify-self: flex-end;
-    width: 35%;
-    height: 36px;
-    font-size: 18px;
-  }
-  .form-contact textarea {
-    font-size: 18px;
-  }
   .form-contact button {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
@@ -912,10 +891,16 @@ footer p {
           flex-direction: column;
 }
 
-.input_and_select input {
-  height: 20px;
-  font-family: "Sulphur Point", "sans-serif";
-  margin-bottom: 10px;
+@media (min-width: 1025px) {
+  .input_and_select {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .input_and_select .visuallyhidden {
@@ -929,6 +914,20 @@ footer p {
   width: 1px;
 }
 
+.input_and_select input {
+  height: 20px;
+  font-family: "Sulphur Point", "sans-serif";
+  margin-bottom: 10px;
+}
+
+@media (min-width: 1025px) {
+  .input_and_select input {
+    width: 50%;
+    height: 30px;
+    font-size: 18px;
+  }
+}
+
 .input_and_select select {
   height: 25px;
   font-family: "Sulphur Point", "sans-serif";
@@ -936,11 +935,20 @@ footer p {
   margin-bottom: 10px;
 }
 
-.input_and_select select option {
-  color: #23272A;
-}
-
 .input_and_select select:invalid {
   color: gray;
+}
+
+@media (min-width: 1025px) {
+  .input_and_select select {
+    justify-self: flex-end;
+    width: 35%;
+    height: 36px;
+    font-size: 18px;
+  }
+}
+
+.input_and_select select option {
+  color: #23272A;
 }
 /*# sourceMappingURL=style.css.map */
