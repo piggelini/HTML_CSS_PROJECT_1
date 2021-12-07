@@ -160,9 +160,18 @@ header {
     color: #23272A;
   }
   .header-nav ul a {
+    font-size: 20px;
+    font-family: "Sulphur Point", "sans-serif";
+    font-weight: bold;
     text-decoration: none;
     color: #23272A;
-    margin: 10px;
+    margin: 10px 30px 10px 10px;
+  }
+  .header-nav ul a:hover {
+    color: #F5F3F2;
+  }
+  .header-nav ul a.selected {
+    text-decoration: underline;
   }
 }
 
@@ -226,9 +235,13 @@ header {
   height: 31px;
   background: #F9A196;
   color: #23272A;
-  font-family: "Sulphur Point";
+  font-family: "Sulphur Point", "sans-serif";
   font-size: 12px;
   font-weight: bold;
+}
+
+.header-bottom h2 {
+  font-size: 20px;
 }
 
 @media (min-width: 769px) {
@@ -254,7 +267,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: "Sulphur Point";
+  font-family: "Sulphur Point", "sans-serif";
   font-weight: bold;
   font-size: 13px;
   position: relative;
@@ -750,12 +763,12 @@ main {
 
 .form-contact input {
   height: 20px;
-  font-family: "Sulphur Point";
+  font-family: "Sulphur Point", "sans-serif";
 }
 
 .form-contact select {
   height: 25px;
-  font-family: "Sulphur Point";
+  font-family: "Sulphur Point", "sans-serif";
   padding: 3px 0px 3px 0px;
 }
 
@@ -769,7 +782,7 @@ main {
 
 .form-contact textarea {
   height: 100px;
-  font-family: "Sulphur Point";
+  font-family: "Sulphur Point", "sans-serif";
 }
 
 .form-contact button {
@@ -781,7 +794,7 @@ main {
   border-radius: 10px;
   margin: 20px 0px;
   background-color: #ED6591;
-  font-family: "Sulphur Point";
+  font-family: "Sulphur Point", "sans-serif";
   font-weight: bold;
   color: #23272A;
   font-size: 15px;
