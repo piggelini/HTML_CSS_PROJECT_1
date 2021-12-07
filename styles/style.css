@@ -614,6 +614,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-image: none;
 }
 
 .recensioner-sida h2 {
