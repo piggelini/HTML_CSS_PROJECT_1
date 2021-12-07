@@ -671,7 +671,15 @@ footer p {
   }
 }
 
+@media (min-width: 1201px) {
+  .recension-wrapper {
+    margin: 0 20em;
+  }
+}
+
 .recension {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
   background-color: #F5F3F2;
   padding: 2em;
 }
