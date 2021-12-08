@@ -65,7 +65,7 @@
                 <h3>Skicka ett meddelande till oss</h3>
                 <div class="input_and_select">
                     <label for="email" class="visuallyhidden"></label>
-                    <input type="text" class="input_email" id="email" placeholder="Mejladress">
+                    <input type="text" class="input_email" id="email" placeholder="Mejladress" required>
                     <label for="contact_reason"></label>
                     <select name="reason_for_contact" id="contact_reason" required>
                         <option value="" disabled selected hidden>Anledning till kontakt</option>
@@ -75,7 +75,7 @@
                     </select>
                 </div>
                 <label for="input_message"></label>
-                <textarea id="input_message" placeholder="Fritext..."></textarea>
+                <textarea id="input_message" placeholder="Fritext..." required></textarea>
                 <button>Skicka</button>
             </form>
 
