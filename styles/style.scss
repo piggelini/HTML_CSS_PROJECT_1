@@ -601,7 +601,7 @@ footer {
     height: 100px;
     font-family: $text, "sans-serif";
     &:focus {
-      box-shadow: 0px 4px 10px $cerise;
+      box-shadow: 4px 10px rgba(0, 0, 0, 0.1);
     }
     @include for-large-screen { //Vid större skärm (från large-screen och uppåt)
       font-size: 18px;
@@ -653,7 +653,7 @@ footer {
     font-family: $text, "sans-serif";
     margin-bottom: 10px;
     &:focus {
-      box-shadow: 0px 4px 10px $cerise;
+      box-shadow: 4px 10px rgba(0, 0, 0, 0.1);
     }
     @include for-large-screen { //Vid större skärm (från large-screen och uppåt) 
       width: 50%;
@@ -670,7 +670,7 @@ footer {
       color: gray;
     }
     &:focus {
-      box-shadow: 0px 4px 10px $cerise;
+      box-shadow: 4px 10px rgba(0, 0, 0, 0.1);
     }
     @include for-large-screen { //Vid större skärm (från large-screen och uppåt) 
       justify-self: flex-end;

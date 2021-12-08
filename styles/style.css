@@ -850,8 +850,8 @@ footer p {
 }
 
 .form-contact textarea:focus {
-  -webkit-box-shadow: 0px 4px 10px #ED6591;
-          box-shadow: 0px 4px 10px #ED6591;
+  -webkit-box-shadow: 4px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: 1025px) {
@@ -931,8 +931,8 @@ footer p {
 }
 
 .input_and_select input:focus {
-  -webkit-box-shadow: 0px 4px 10px #ED6591;
-          box-shadow: 0px 4px 10px #ED6591;
+  -webkit-box-shadow: 4px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: 1025px) {
@@ -955,8 +955,8 @@ footer p {
 }
 
 .input_and_select select:focus {
-  -webkit-box-shadow: 0px 4px 10px #ED6591;
-          box-shadow: 0px 4px 10px #ED6591;
+  -webkit-box-shadow: 4px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: 1025px) {
