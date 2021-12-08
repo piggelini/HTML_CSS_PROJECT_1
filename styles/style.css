@@ -849,6 +849,11 @@ footer p {
   font-family: "Sulphur Point", "sans-serif";
 }
 
+.form-contact textarea:focus {
+  -webkit-box-shadow: 0px 4px 10px #ED6591;
+          box-shadow: 0px 4px 10px #ED6591;
+}
+
 @media (min-width: 1025px) {
   .form-contact textarea {
     font-size: 18px;
@@ -857,7 +862,7 @@ footer p {
 
 .form-contact button {
   width: 100%;
-  height: 30px;
+  height: 35px;
   -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   border: none;
@@ -868,6 +873,11 @@ footer p {
   font-weight: bold;
   color: #23272A;
   font-size: 15px;
+}
+
+.form-contact button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 @media (min-width: 1025px) {
@@ -920,6 +930,11 @@ footer p {
   margin-bottom: 10px;
 }
 
+.input_and_select input:focus {
+  -webkit-box-shadow: 0px 4px 10px #ED6591;
+          box-shadow: 0px 4px 10px #ED6591;
+}
+
 @media (min-width: 1025px) {
   .input_and_select input {
     width: 50%;
@@ -937,6 +952,11 @@ footer p {
 
 .input_and_select select:invalid {
   color: gray;
+}
+
+.input_and_select select:focus {
+  -webkit-box-shadow: 0px 4px 10px #ED6591;
+          box-shadow: 0px 4px 10px #ED6591;
 }
 
 @media (min-width: 1025px) {
