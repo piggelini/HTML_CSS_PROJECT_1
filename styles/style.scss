@@ -142,6 +142,10 @@ header {
                 &:hover {
                   color: $white;
                 }
+                &:active {
+                  color: black;
+                  text-decoration: underline;
+                }
             }
 
             a.selected {
@@ -267,6 +271,10 @@ footer {
             &:hover {
                 color: $white;
             }
+            &:active {
+              color:$black;
+              text-decoration: underline;
+            }
         }
         
         a.selected {
@@ -374,16 +382,10 @@ footer {
 //meny
 .meny-sida {
   //bakgrund
-  background-image:url(/images/menyImgMobile.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-  @include for-small-screen {
-    background-image:url(/images/menyImgDesktop.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-  }
+  background-image:url(/images/menyBackground.jpg);
+  max-width: 100%;
+  height: auto;
+  background-size: cover;
 
   display: flex;
   flex-direction: column;

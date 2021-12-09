@@ -178,6 +178,10 @@ header {
   .header-nav ul a:hover {
     color: #F5F3F2;
   }
+  .header-nav ul a:active {
+    color: black;
+    text-decoration: underline;
+  }
   .header-nav ul a.selected {
     text-decoration: underline;
   }
@@ -331,6 +335,11 @@ footer p {
   color: #F5F3F2;
 }
 
+.footer-nav ul a:active {
+  color: #23272A;
+  text-decoration: underline;
+}
+
 .footer-nav ul a.selected {
   text-decoration: underline;
 }
@@ -480,10 +489,10 @@ footer p {
 }
 
 .meny-sida {
-  background-image: url(/images/menyImgMobile.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
+  background-image: url(/images/menyBackground.jpg);
+  max-width: 100%;
+  height: auto;
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -491,15 +500,6 @@ footer p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-@media (min-width: 769px) {
-  .meny-sida {
-    background-image: url(/images/menyImgDesktop.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-  }
 }
 
 .meny-sida h2 {
@@ -617,6 +617,17 @@ footer p {
 }
 
 /* image 3 */
+.omOss-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: none;
+}
+
 .recensioner-sida {
   display: -webkit-box;
   display: -ms-flexbox;
