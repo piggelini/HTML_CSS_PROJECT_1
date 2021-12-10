@@ -118,6 +118,10 @@ header {
           align-items: center;
 }
 
+.header-top .Logo .text-logo {
+  font-size: 1px;
+}
+
 .header-top .Logo img {
   width: 63px;
   margin-left: 10px;
