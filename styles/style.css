@@ -158,21 +158,11 @@ header {
             flex-direction: row;
     list-style-type: none;
     color: #23272A;
-    margin: 20px;
   }
   .header-nav ul a {
-    font-size: 22px;
-    font-family: "Sulphur Point", "sans-serif";
-    font-weight: bold;
     text-decoration: none;
     color: #23272A;
-    margin: 15px;
-  }
-  .header-nav ul a:hover {
-    color: #F5F3F2;
-  }
-  .header-nav ul a.selected {
-    text-decoration: underline;
+    margin: 10px;
   }
 }
 
@@ -236,13 +226,9 @@ header {
   height: 31px;
   background: #F9A196;
   color: #23272A;
-  font-family: "Sulphur Point", "sans-serif";
+  font-family: "Sulphur Point";
   font-size: 12px;
   font-weight: bold;
-}
-
-.header-bottom h2 {
-  font-size: 20px;
 }
 
 @media (min-width: 769px) {
@@ -268,7 +254,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: "Sulphur Point", "sans-serif";
+  font-family: "Sulphur Point";
   font-weight: bold;
   font-size: 13px;
   position: relative;
@@ -736,74 +722,32 @@ main {
 }
 
 .main-content-contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   padding: 20px 0px 0px 0px;
 }
 
 .main-content-contact h2 {
-  text-align: center;
-  margin: 0px;
   display: none;
 }
 
 .main-content-contact img {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
   width: 100%;
-  -webkit-box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.05);
-          box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.05);
 }
 
 @media (min-width: 481px) {
-  .main-content-contact img {
-    width: 60%;
-  }
-}
-
-@media (min-width: 769px) {
   .main-content-contact {
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(47.92%, #f5dad0), to(#fbf8e7));
     background-image: linear-gradient(180deg, #f5dad0 47.92%, #fbf8e7 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
-  .main-content-contact h2 {
-    display: block;
-  }
 }
 
 .content-contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   padding: 0px 10px 0px 10px;
 }
 
 .content-contact h3 {
   margin: 5px 0px 5px 0px;
-}
-
-@media (min-width: 481px) {
-  .content-contact {
-    width: 60%;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-  }
-  .content-contact h3 {
-    font-size: 34px;
-  }
 }
 
 .form-contact {
@@ -821,9 +765,28 @@ main {
   font-size: 20px;
 }
 
+.form-contact input {
+  height: 20px;
+  font-family: "Sulphur Point";
+}
+
+.form-contact select {
+  height: 25px;
+  font-family: "Sulphur Point";
+  padding: 3px 0px 3px 0px;
+}
+
+.form-contact select option {
+  color: #23272A;
+}
+
+.form-contact select:invalid {
+  color: gray;
+}
+
 .form-contact textarea {
   height: 100px;
-  font-family: "Sulphur Point", "sans-serif";
+  font-family: "Sulphur Point";
 }
 
 .form-contact button {
@@ -835,7 +798,7 @@ main {
   border-radius: 10px;
   margin: 20px 0px;
   background-color: #ED6591;
-  font-family: "Sulphur Point", "sans-serif";
+  font-family: "Sulphur Point";
   font-weight: bold;
   color: #23272A;
   font-size: 15px;
@@ -848,84 +811,5 @@ main {
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
-}
-
-@media (min-width: 1025px) {
-  .form-contact h3 {
-    font-size: 30px;
-  }
-  .form-contact .input_and_select {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .form-contact .input_and_select input {
-    width: 50%;
-    height: 30px;
-    font-size: 18px;
-  }
-  .form-contact .input_and_select select {
-    justify-self: flex-end;
-    width: 35%;
-    height: 36px;
-    font-size: 18px;
-  }
-  .form-contact textarea {
-    font-size: 18px;
-  }
-  .form-contact button {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    width: 40%;
-    height: 45px;
-    font-size: 24px;
-  }
-}
-
-.input_and_select {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.input_and_select input {
-  height: 20px;
-  font-family: "Sulphur Point", "sans-serif";
-  margin-bottom: 10px;
-}
-
-.input_and_select .visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
-.input_and_select select {
-  height: 25px;
-  font-family: "Sulphur Point", "sans-serif";
-  padding: 3px 0px 3px 0px;
-  margin-bottom: 10px;
-}
-
-.input_and_select select option {
-  color: #23272A;
-}
-
-.input_and_select select:invalid {
-  color: gray;
 }
 /*# sourceMappingURL=style.css.map */
