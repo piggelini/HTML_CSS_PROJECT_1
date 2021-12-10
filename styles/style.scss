@@ -45,14 +45,6 @@ nav a.hamburger-active {
   text-decoration: underline;
 };
 
-nav a.header-active {
-  color:aqua; //Celina, detta är bara filler styling, du kan ändra till rätt
-};
-
-footer a.footer-active {
-  color:aqua; //Celina, detta är bara filler styling, du kan ändra till rätt
-}
-
 //Other
 
 body{
@@ -143,6 +135,10 @@ header {
                 
                 &:hover {
                   color: $white;
+                }
+                &:active {
+                  color: black;
+                  text-decoration: underline;
                 }
             }
 
@@ -269,6 +265,10 @@ footer {
             &:hover {
                 color: $white;
             }
+            &:active {
+              color:$black;
+              text-decoration: underline;
+            }
         }
         
         a.selected {
@@ -376,90 +376,119 @@ footer {
 //meny
 .meny-sida {
   //bakgrund
-  background-image:url(/images/menyImgMobile.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-  @include for-small-screen {
-    background-image:url(/images/menyImgDesktop.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-  }
+  background-image:url(/images/menyIMG.jpg);
+  filter: contrast(90%);
+  max-width: 100%;
+  background-size: cover;
 
   display: flex;
   flex-direction: column;
+}
 
-  //rubriker position
-  h2 {
-    text-align: center;
-  }
-  h3 {
-    margin:5px 0;
-    text-align: center;
-  }
+//rubriker position
+h2 {
+  text-align: center;
+}
+h3 {
+  margin:5px 0;
+  text-align: left;
+}
 
-  //wrapper runt juicerna och smoothies tillsammans
-  .meny-wrapper {
-    display:flex;
+//tom div under produkter
+.bottom-space {
+  width: 100%;
+  height: 200px;
+  @include for-small-screen {
+    height: 300px;
+  }
+}
+
+//wrapper runt juicerna och smoothies (+underrubriker) tillsammans
+.meny-wrapper {
+  display:flex;
+  flex-direction: column;
+
+  //wrapper runt produkter (först de 6 juicerna, sedan samma sak på de 4 smoothiesarna)
+  .product-wrapper {
+    display: flex;
     flex-direction: column;
-
-    //wrapper runt produkter (först de 6 juicerna, sedan samma sak på de 4 smoothiesarna)
-    .product-wrapper {
+    @include for-small-screen {
       display: flex;
       flex-direction: column;
+      align-items: center;
+    }
+
+    .subheading-wrapper {
+      padding-left: 25px;
+      height: 35px;
       @include for-small-screen {
+        width:590px;
+        height: 50px;
+        padding:0 10px;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
       }
       @include for-large-screen {
+        width:1210px;
+        height: 50px;
+        padding:0 10px;
         display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
       }
       
-      //wrapper runt enskild product
-      .product-box {
-        display: flex;
+    }
+
+    //produkterna är placerade i två kolumner för stor skärm
+    .two-products {
+      @include for-large-screen {
+        display:flex;
         flex-direction: row;
-        height:170px;
-        max-width: 769px;
-        margin: 5px 0;
-        background-color: $white;
+      }
+    }
+    
+    //wrapper runt enskild product
+    .product-box {
+      display: flex;
+      flex-direction: row;
+      height:170px;
+      max-width: 100%;
+      margin: 5px 0;
+      padding: 0 5px;
+      background-color: $white;
+      @include for-small-screen {
+        height:220px;
+        width: 600px;
+        margin: 5px 5px;
+      }
+
+      //produktbild
+      .product-img {
+        margin: 15px 20px;
+        width: 140px;
         @include for-small-screen {
-          height:220px;
-          width: 600px;
-          margin: 5px 5px;
+          width: 180px;
         }
+      }
 
-        //produktbild
-        .product-img {
-          margin: 15px 30px;
-          width: 140px;
-          @include for-small-screen {
-            width: 180px;
-          }
+      //produkt rubrik och text
+      .product-info {
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 450px;
+        h4{
+          height: 2px;
         }
-
-        //produkt rubrik och text
-        .product-info {
-          display:flex;
-          flex-direction: column;
-          justify-content: flex-start;
-          width: 450px;
-          h4{
-            height: 2px;
-          }
-          p {
-            height: 2px;;
-          }
+        p {
+          height: 2px;;
         }
       }
     }
   }
 }
-/* image 3 */
+
 
 // Om oss
 
