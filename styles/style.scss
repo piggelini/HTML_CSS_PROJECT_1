@@ -90,15 +90,16 @@ header {
         flex-direction: row;
         align-items: center;
 
-        .text-logo {
-          font-size: 1px;
-        }
 
         img{
             width: 63px;
-            margin-left:10px;
+            margin-left: 10px;
+            @include for-small-screen {
+              margin-left:20px;
+            }
+            
         }
-                
+
         a:nth-of-type(2) {
             display: none;
                 
@@ -108,7 +109,7 @@ header {
                 margin: 15px;
                 color: $white;
                 text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-                font-size: 25px;
+                font-size: 24px;
                 font-family: $heading;
                 
             }
@@ -137,6 +138,7 @@ header {
                 text-decoration: none;
                 color: $black;
                 margin: 15px;
+                margin-right: 20px;
                 
                 &:hover {
                   color: $white;

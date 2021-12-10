@@ -118,13 +118,15 @@ header {
           align-items: center;
 }
 
-.header-top .Logo .text-logo {
-  font-size: 1px;
-}
-
 .header-top .Logo img {
   width: 63px;
   margin-left: 10px;
+}
+
+@media (min-width: 769px) {
+  .header-top .Logo img {
+    margin-left: 20px;
+  }
 }
 
 .header-top .Logo a:nth-of-type(2) {
@@ -138,7 +140,7 @@ header {
     margin: 15px;
     color: #F5F3F2;
     text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    font-size: 25px;
+    font-size: 24px;
     font-family: "Baloo 2";
   }
 }
@@ -175,6 +177,7 @@ header {
     text-decoration: none;
     color: #23272A;
     margin: 15px;
+    margin-right: 20px;
   }
   .header-nav ul a:hover {
     color: #F5F3F2;
