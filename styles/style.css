@@ -673,18 +673,6 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-image: none;
-}
-
-.omOss-main .personalfoto {
-  margin: 15px 20px;
-  width: 140px;
-}
-
-@media (min-width: 769px) {
-  .omOss-main .personalfoto {
-    width: 180px;
-  }
 }
 
 .recensioner-sida {
