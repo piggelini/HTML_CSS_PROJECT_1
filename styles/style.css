@@ -296,9 +296,21 @@ footer {
   bottom: 0;
 }
 
+@media (min-width: 769px) {
+  footer {
+    font-size: 15px;
+  }
+}
+
 footer p {
   margin: 0;
   font-size: 13px;
+}
+
+@media (min-width: 769px) {
+  footer p {
+    font-size: 15px;
+  }
 }
 
 .footer-nav {

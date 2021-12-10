@@ -246,9 +246,17 @@ footer {
     position: relative;
     bottom:0;
 
+    @include for-small-screen {
+      font-size: 15px;
+    }
+
     p {
         margin: 0;
         font-size: 13px;
+
+        @include for-small-screen {
+          font-size: 15px;
+        }
         }
 }
 
