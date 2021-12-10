@@ -512,6 +512,17 @@ h3 {
   text-align: left;
 }
 
+.bottom-space {
+  width: 100%;
+  height: 200px;
+}
+
+@media (min-width: 769px) {
+  .bottom-space {
+    height: 300px;
+  }
+}
+
 .meny-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -547,18 +558,56 @@ h3 {
   }
 }
 
+.meny-wrapper .product-wrapper .subheading-wrapper {
+  padding-left: 25px;
+  height: 35px;
+}
+
+@media (min-width: 769px) {
+  .meny-wrapper .product-wrapper .subheading-wrapper {
+    width: 590px;
+    height: 50px;
+    padding: 0 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
 @media (min-width: 1025px) {
-  .meny-wrapper .product-wrapper {
+  .meny-wrapper .product-wrapper .subheading-wrapper {
+    width: 1210px;
+    height: 50px;
+    padding: 0 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media (min-width: 1025px) {
+  .meny-wrapper .product-wrapper .two-products {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -571,8 +620,9 @@ h3 {
       -ms-flex-direction: row;
           flex-direction: row;
   height: 170px;
-  max-width: 769px;
+  max-width: 100%;
   margin: 5px 0;
+  padding: 0 5px;
   background-color: #F5F3F2;
 }
 
@@ -585,7 +635,7 @@ h3 {
 }
 
 .meny-wrapper .product-wrapper .product-box .product-img {
-  margin: 15px 30px;
+  margin: 15px 20px;
   width: 140px;
 }
 
