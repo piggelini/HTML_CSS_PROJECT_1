@@ -31,7 +31,7 @@
                     <ul>
                         <li><a href="index.html">STARTSIDA</a></li>
                         <li><a href="meny.html">MENY</a></li>
-                        <li><a href="#">OM OSS</a></li>
+                        <li><a href="omOss.html">OM OSS</a></li>
                         <li><a href="#">RECENSIONER</a></li>
                         <li><a href="kontakt.html" class="selected">KONTAKT</a></li>
                     </ul>
@@ -65,18 +65,18 @@
                 <h3>Skicka ett meddelande till oss</h3>
                 <div class="input_and_select">
                     <label for="email" class="visuallyhidden"></label>
-                    <input type="text" class="input_email" id="email" placeholder="Mejladress">
+                    <input type="text" class="input_email" id="email" placeholder="Mejladress" required>
                     <label for="contact_reason"></label>
-                    <select name="reason_for_contact" id="contact_reason" number="3" required>
-                    <option value="" disabled selected hidden>Anledning till kontakt</option>
-                    <option value="product_question">Köp av produkt/tjänst</option>
-                    <option value="company_question">Frågor om Juiced</option>
-                    <option value="feedback_webbsite">Synpunkter på webbplats</option>
+                    <select name="reason_for_contact" id="contact_reason" required>
+                        <option value="" disabled selected hidden>Anledning till kontakt</option>
+                        <option value="product_question">Köp av produkt/tjänst</option>
+                        <option value="company_question">Frågor om Juiced</option>
+                        <option value="feedback_webbsite">Synpunkter på webbplats</option>
                     </select>
                 </div>
                 <label for="input_message"></label>
-                <textarea type="text" id="input_message" placeholder="Fritext..."></textarea>
-                <button>Skicka</button>
+                <textarea id="input_message" placeholder="Fritext..." required></textarea>
+                <button class="send_button">Skicka</button>
             </form>
 
           </div>
@@ -91,9 +91,9 @@
                 <ul>
                     <li><a href="index.html">Startsida</a></li>
                     <li><a href="meny.html">Meny</a></li>
-                    <li><a href="#">Om oss</a></li>
+                    <li><a href="omOss.html">Om oss</a></li>
                     <li><a href="#">Recensioner</a></li>
-                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="kontakt.html" class="selected">Kontakt</a></li>
                 </ul>
             </nav>
 
@@ -105,7 +105,7 @@
         </footer>
 
     </div>
-
+    <script src="kontakt.js"></script>
 </body>
 
 </html>

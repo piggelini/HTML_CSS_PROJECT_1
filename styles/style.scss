@@ -44,14 +44,6 @@ nav a.hamburger-active {
   text-decoration: underline;
 };
 
-nav a.header-active {
-  color:aqua; //Celina, detta är bara filler styling, du kan ändra till rätt
-};
-
-footer a.footer-active {
-  color:aqua; //Celina, detta är bara filler styling, du kan ändra till rätt
-}
-
 //Other
 
 body{
@@ -61,12 +53,19 @@ body{
     min-height: 100vh;
 }
 
+//Bakgrund på alla sidors main
+main{
+  @include background-gradient;
+  }
+
 .wrapper{
     display:flex;
     flex-direction: column;
     position: relative;
     min-height: 100%;
 }
+
+//Header
 
 header {
     display: flex;
@@ -75,8 +74,6 @@ header {
     top: 0;
     min-width: 100%;
 }
-    
-
 
 .header-top {
     display:flex;
@@ -116,7 +113,9 @@ header {
     display: none;
 
     @include for-small-screen{
-        display: block;
+        display: flex;
+        width: 90%;
+        justify-content: flex-end;
 
         ul{
             display:flex;
@@ -125,13 +124,53 @@ header {
             color: $black;
 
             a{
+                font-size: 18px;
+                font-family: $text, "sans-serif";
+                font-weight: bold;
                 text-decoration: none;
                 color: $black;
-                margin: 10px;
+                margin: 15px;
+                
+                &:hover {
+                  color: $white;
+                }
+                &:active {
+                  color: black;
+                  text-decoration: underline;
+                }
+            }
+
+            a.selected {
+              text-decoration: underline;
             }
         }
     }
 }
+
+.header-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:31px;
+    background: $coral;
+    color: $black;
+    font-family: $text, "sans-serif";
+    font-size: 12px;
+    font-weight: bold;
+    
+    h2 {
+      font-size: 20px;
+    }
+
+    @include for-small-screen{ 
+        h2{
+            display: none;
+        }
+    } 
+}
+
+//Hamburgarmeny
+
 .hamburger-dropdown {
   position: relative;
   text-align: right;
@@ -168,6 +207,10 @@ header {
     font-weight: bold;
     font-size: 36px;
 
+    @include for-tablet {
+      font-size: 52px;
+    }
+
     &:hover {
       color: $cerise;
     }
@@ -178,27 +221,7 @@ header {
   display: block;
 }
 
-
-.header-bottom {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height:31px;
-    background: $coral;
-    color: $black;
-    font-family: $text;
-    font-size: 12px;
-    font-weight: bold;
-                
-    @include for-small-screen{ 
-        h2{
-            display: none;
-        }
-    } 
-}
-
-
-
+//Footer
 
 footer {
     min-width:100%;
@@ -216,6 +239,7 @@ footer {
 
     p {
         margin: 0;
+        font-size: 13px;
         }
 }
 
@@ -240,6 +264,14 @@ footer {
             &:hover {
                 color: $white;
             }
+            &:active {
+              color:$black;
+              text-decoration: underline;
+            }
+        }
+        
+        a.selected {
+          text-decoration: underline;
         }
 
         :not(:last-of-type){ 
@@ -248,10 +280,6 @@ footer {
     }
 }
 
-//Bakgrund på alla sidors main
-main{
-@include background-gradient;
-}
 // index/startsida
 
 .index {
@@ -347,92 +375,127 @@ main{
 //meny
 .meny-sida {
   //bakgrund
-  background-image:url(/images/menyImgMobile.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-  @include for-small-screen {
-    background-image:url(/images/menyImgDesktop.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-  }
+  background-image:url(/images/menyIMG.jpg);
+  filter: contrast(90%);
+  max-width: 100%;
+  background-size: cover;
 
   display: flex;
   flex-direction: column;
+}
 
-  //rubriker position
-  h2 {
-    text-align: center;
-  }
-  h3 {
-    margin:5px 0;
-    text-align: center;
-  }
+//rubriker position
+h2 {
+  text-align: center;
+}
+h3 {
+  margin:5px 0;
+  text-align: left;
+}
 
-  //wrapper runt juicerna och smoothies tillsammans
-  .meny-wrapper {
-    display:flex;
+//tom div under produkter
+.bottom-space {
+  width: 100%;
+  height: 200px;
+  @include for-small-screen {
+    height: 300px;
+  }
+}
+
+//wrapper runt juicerna och smoothies (+underrubriker) tillsammans
+.meny-wrapper {
+  display:flex;
+  flex-direction: column;
+
+  //wrapper runt produkter (först de 6 juicerna, sedan samma sak på de 4 smoothiesarna)
+  .product-wrapper {
+    display: flex;
     flex-direction: column;
-
-    //wrapper runt produkter (först de 6 juicerna, sedan samma sak på de 4 smoothiesarna)
-    .product-wrapper {
+    @include for-small-screen {
       display: flex;
       flex-direction: column;
+      align-items: center;
+    }
+
+    .subheading-wrapper {
+      padding-left: 25px;
+      height: 35px;
       @include for-small-screen {
+        width:590px;
+        height: 50px;
+        padding:0 10px;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
       }
       @include for-large-screen {
+        width:1210px;
+        height: 50px;
+        padding:0 10px;
         display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
       }
       
-      //wrapper runt enskild product
-      .product-box {
-        display: flex;
+    }
+
+    //produkterna är placerade i två kolumner för stor skärm
+    .two-products {
+      @include for-large-screen {
+        display:flex;
         flex-direction: row;
-        height:170px;
-        max-width: 769px;
-        margin: 5px 0;
-        background-color: $white;
+      }
+    }
+    
+    //wrapper runt enskild product
+    .product-box {
+      display: flex;
+      flex-direction: row;
+      height:170px;
+      max-width: 100%;
+      margin: 5px 0;
+      padding: 0 5px;
+      background-color: $white;
+      @include for-small-screen {
+        height:220px;
+        width: 600px;
+        margin: 5px 5px;
+      }
+
+      //produktbild
+      .product-img {
+        margin: 15px 20px;
+        width: 140px;
         @include for-small-screen {
-          height:220px;
-          width: 600px;
-          margin: 5px 5px;
+          width: 180px;
         }
+      }
 
-        //produktbild
-        .product-img {
-          margin: 15px 30px;
-          width: 140px;
-          @include for-small-screen {
-            width: 180px;
-          }
+      //produkt rubrik och text
+      .product-info {
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 450px;
+        h4{
+          height: 2px;
         }
-
-        //produkt rubrik och text
-        .product-info {
-          display:flex;
-          flex-direction: column;
-          justify-content: flex-start;
-          width: 450px;
-          h4{
-            height: 2px;
-          }
-          p {
-            height: 2px;;
-          }
+        p {
+          height: 2px;;
         }
       }
     }
   }
 }
-/* image 3 */
 
 
+// Om oss
+
+.omOss-main {
+  display: flex;
+  flex-direction: column;
+  background-image: none;
+}
 
 
 //recensioner
@@ -440,6 +503,7 @@ main{
 .recensioner-sida {
   display: flex;
   flex-direction: column;
+  background-image: none;
   h2 {
     display: none;
     text-align: center;
@@ -470,9 +534,13 @@ main{
     flex-direction: row;
     justify-content: center;
   }
+  @include for-extra-large-screen {
+    margin: 0 20em;
+  }
 }
 
 .recension {
+  flex-basis:50%;
   background-color: $white;
   padding: 2em;
   hr {
@@ -515,28 +583,43 @@ main{
   }
 }
 
-//Kontakt sidan//
+//Kontakt sidan 
+
 .main-content-contact{ //Main
+  display: flex;
+  flex-direction: column;
   padding: 20px 0px 0px 0px;
-
   h2 { //H2:an
+    text-align: center;
+    margin: 0px;
     display: none;
+    @include for-small-screen { //Vid större skärm (från small-screen och uppåt)
+      display: block;
+    }
   }
-
   img { //Bilden
+    align-self: center;
     width: 100%;
-  }
-
-  @include for-tablet { //Vid större skärm (från tablet och uppåt) byt bakgrundsfärg
-    @include background-gradient;
+    box-shadow: $white-box-shadow;
+    @include for-tablet { //Vid större skärm (från tablet och uppåt)
+      width: 60%;
+    }
   }
 }
 
-.content-contact { //div som wrappar alla html element förutom h2:an  
+.content-contact { //Div som wrappar alla html element förutom h2 och bilden
+  display: flex;
+  flex-direction: column;
   padding: 0px 10px 0px 10px;
-
+  @include for-tablet { //Vid större skärm (från tablet och uppåt)
+    width: 60%;
+    align-self: center;
+  }
   h3 { // Alla h3:or
     margin: 5px 0px 5px 0px;
+    @include for-tablet { //Vid större skärm (från tablet och uppåt)
+      font-size: 34px;
+    }
   }
 }
 
@@ -544,51 +627,99 @@ main{
   width: 100%;
   display: flex;
   flex-direction: column;
-
-  h3 {
+  h3 { //h3:an i formuläret
     font-size: 20px;
-  }
-
-  input { //Input fältet 
-    height: 20px;
-    font-family: $text;
-  }
-
-  select { //Select 
-    height: 25px;
-    font-family: $text;
-    padding: 3px 0px 3px 0px;
-
-    option { //Val i select
-      color: $black;
+    @include for-large-screen { //Vid större skärm (från large-screen och uppåt)
+      font-size: 30px;
     }
   }
-
-  select:invalid { //Placeholder i select
-    color: gray;
-  }
-
   textarea { //Fritext input
     height: 100px;
-    font-family: $text;
+    font-family: $text, "sans-serif";
+    &:focus {
+      box-shadow: $white-box-shadow;
+    }
+    @include for-large-screen { //Vid större skärm (från large-screen och uppåt)
+      font-size: 18px;
+    }
   }
-
   button { //Skicka knappen
     width: 100%;
-    height: 30px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    height: 35px;
+    box-shadow: $white-box-shadow;
     border: none;
     border-radius: 10px;
     margin: 20px 0px;
     background-color: $cerise;
-    font-family: $text;
+    font-family: $text, "sans-serif";
     font-weight: bold;
     color: $black;
     font-size: 15px;
-  }
-
-  @include for-tablet { //Vid större skärm (från tablet och uppåt) byt bakgrundsfärg
-    @include background-gradient;
+    &:hover {
+      transform: scale(1.05);
+    }
+    @include for-large-screen { //Vid större skärm (från large-screen och uppåt)
+      align-self: center;
+      width: 40%;
+      height: 45px;
+      font-size: 24px;
+    }
   }
 }
+
+.input_and_select { //Div med inputfält för mejl och select
+  display: flex;
+  flex-direction: column;
+  @include for-large-screen { //Vid större skärm (från large-screen och uppåt) 
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .visuallyhidden { //Gömmer label för email då den tar upp plats som gör att placering blir tokigt. Detta för att behålla tillgängligheten.
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  input { //Input fältet 
+    height: 20px;
+    font-family: $text, "sans-serif";
+    margin-bottom: 10px;
+    &:focus {
+      box-shadow: $white-box-shadow;
+    }
+    @include for-large-screen { //Vid större skärm (från large-screen och uppåt) 
+      width: 50%;
+      height: 30px;
+      font-size: 18px;
+    }
+  }
+  select { //Select 
+    height: 25px;
+    font-family: $text, "sans-serif";
+    padding: 3px 0px 3px 0px;
+    margin-bottom: 10px;
+    &:invalid { //Placeholder i select
+      color: gray;
+    }
+    &:focus {
+      box-shadow: $white-box-shadow;
+    }
+    @include for-large-screen { //Vid större skärm (från large-screen och uppåt) 
+      justify-self: flex-end;
+      width: 35%;
+      height: 36px;
+      font-size: 18px;
+    }
+    option { //Val i select
+      color: $black;
+    }
+  }
+}
+
+
+
 
