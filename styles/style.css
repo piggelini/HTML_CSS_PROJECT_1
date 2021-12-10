@@ -443,6 +443,11 @@ footer p {
   margin-bottom: 80px;
 }
 
+.index-coming-soon .articles a {
+  text-decoration: none;
+  color: #23272A;
+}
+
 @media (min-width: 769px) {
   .index-coming-soon .articles {
     -webkit-box-orient: horizontal;
