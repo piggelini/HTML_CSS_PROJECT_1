@@ -51,14 +51,6 @@ nav a.hamburger-active {
   text-decoration: underline;
 }
 
-nav a.header-active {
-  color: aqua;
-}
-
-footer a.footer-active {
-  color: aqua;
-}
-
 body {
   margin: 0;
   background: #F5F3F2;
@@ -682,6 +674,17 @@ h3 {
       -ms-flex-direction: column;
           flex-direction: column;
   background-image: none;
+}
+
+.omOss-main .personalfoto {
+  margin: 15px 20px;
+  width: 140px;
+}
+
+@media (min-width: 769px) {
+  .omOss-main .personalfoto {
+    width: 180px;
+  }
 }
 
 .recensioner-sida {
