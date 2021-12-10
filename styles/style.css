@@ -153,7 +153,13 @@ header {
 
 @media (min-width: 769px) {
   .header-nav {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
   .header-nav ul {
     display: -webkit-box;
@@ -168,7 +174,7 @@ header {
     margin: 20px;
   }
   .header-nav ul a {
-    font-size: 22px;
+    font-size: 18px;
     font-family: "Sulphur Point", "sans-serif";
     font-weight: bold;
     text-decoration: none;
@@ -617,6 +623,17 @@ footer p {
 }
 
 /* image 3 */
+.omOss-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: none;
+}
+
 .recensioner-sida {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -850,8 +867,8 @@ footer p {
 }
 
 .form-contact textarea:focus {
-  -webkit-box-shadow: 4px 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 4px 10px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.05);
 }
 
 @media (min-width: 1025px) {
@@ -863,8 +880,8 @@ footer p {
 .form-contact button {
   width: 100%;
   height: 35px;
-  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.05);
   border: none;
   border-radius: 10px;
   margin: 20px 0px;
@@ -931,8 +948,8 @@ footer p {
 }
 
 .input_and_select input:focus {
-  -webkit-box-shadow: 4px 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 4px 10px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.05);
 }
 
 @media (min-width: 1025px) {
@@ -955,8 +972,8 @@ footer p {
 }
 
 .input_and_select select:focus {
-  -webkit-box-shadow: 4px 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 4px 10px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.05);
 }
 
 @media (min-width: 1025px) {

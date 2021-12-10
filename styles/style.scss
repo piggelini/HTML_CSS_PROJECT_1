@@ -122,7 +122,9 @@ header {
     display: none;
 
     @include for-small-screen{
-        display: block;
+        display: flex;
+        width: 90%;
+        justify-content: flex-end;
 
         ul{
             display:flex;
@@ -132,7 +134,7 @@ header {
             margin: 20px;
 
             a{
-                font-size: 22px;
+                font-size: 18px;
                 font-family: $text, "sans-serif";
                 font-weight: bold;
                 text-decoration: none;
@@ -607,7 +609,7 @@ footer {
     height: 100px;
     font-family: $text, "sans-serif";
     &:focus {
-      box-shadow: 4px 10px rgba(0, 0, 0, 0.1);
+      box-shadow: $white-box-shadow;
     }
     @include for-large-screen { //Vid större skärm (från large-screen och uppåt)
       font-size: 18px;
@@ -616,7 +618,7 @@ footer {
   button { //Skicka knappen
     width: 100%;
     height: 35px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: $white-box-shadow;
     border: none;
     border-radius: 10px;
     margin: 20px 0px;
@@ -659,7 +661,7 @@ footer {
     font-family: $text, "sans-serif";
     margin-bottom: 10px;
     &:focus {
-      box-shadow: 4px 10px rgba(0, 0, 0, 0.1);
+      box-shadow: $white-box-shadow;
     }
     @include for-large-screen { //Vid större skärm (från large-screen och uppåt) 
       width: 50%;
@@ -676,7 +678,7 @@ footer {
       color: gray;
     }
     &:focus {
-      box-shadow: 4px 10px rgba(0, 0, 0, 0.1);
+      box-shadow: $white-box-shadow;
     }
     @include for-large-screen { //Vid större skärm (från large-screen och uppåt) 
       justify-self: flex-end;
