@@ -675,6 +675,17 @@ h3 {
   background-image: none;
 }
 
+.omOss-main .personalfoto {
+  margin: 15px 20px;
+  width: 140px;
+}
+
+@media (min-width: 769px) {
+  .omOss-main .personalfoto {
+    width: 180px;
+  }
+}
+
 .recensioner-sida {
   display: -webkit-box;
   display: -ms-flexbox;
