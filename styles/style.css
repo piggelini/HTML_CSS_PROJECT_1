@@ -123,6 +123,12 @@ header {
   margin-left: 10px;
 }
 
+@media (min-width: 769px) {
+  .header-top .Logo img {
+    margin-left: 20px;
+  }
+}
+
 .header-top .Logo a:nth-of-type(2) {
   display: none;
 }
@@ -134,7 +140,7 @@ header {
     margin: 15px;
     color: #F5F3F2;
     text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    font-size: 25px;
+    font-size: 24px;
     font-family: "Baloo 2";
   }
 }
@@ -163,7 +169,6 @@ header {
             flex-direction: row;
     list-style-type: none;
     color: #23272A;
-    margin: 20px;
   }
   .header-nav ul a {
     font-size: 18px;
@@ -172,6 +177,7 @@ header {
     text-decoration: none;
     color: #23272A;
     margin: 15px;
+    margin-right: 20px;
   }
   .header-nav ul a:hover {
     color: #F5F3F2;
@@ -283,16 +289,28 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: "Sulphur Point", "sans-serif";
+  font-family: "Sulphur Point";
   font-weight: bold;
   font-size: 13px;
   position: relative;
   bottom: 0;
 }
 
+@media (min-width: 769px) {
+  footer {
+    font-size: 15px;
+  }
+}
+
 footer p {
   margin: 0;
   font-size: 13px;
+}
+
+@media (min-width: 769px) {
+  footer p {
+    font-size: 15px;
+  }
 }
 
 .footer-nav {
@@ -370,12 +388,14 @@ footer p {
 }
 
 .index-presentation h2 {
-  margin-bottom: 0;
+  margin: 30px;
+  margin-bottom: 0px;
+  padding: 0px;
 }
 
 .index-presentation p {
   text-align: center;
-  margin: 2em;
+  margin: 1.5em;
 }
 
 @media (min-width: 769px) {
@@ -387,6 +407,7 @@ footer p {
 .index-presentation img {
   max-width: 100%;
   margin: 2em;
+  margin-top: 10px;
 }
 
 @media (min-width: 769px) {
@@ -423,6 +444,11 @@ footer p {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 80px;
+}
+
+.index-coming-soon .articles a {
+  text-decoration: none;
+  color: #23272A;
 }
 
 @media (min-width: 769px) {

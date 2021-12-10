@@ -7,6 +7,8 @@ h1, h2, h3 {
   font-family: $heading, "sans-serif";
 }
 
+
+
 p {
   font-family: $text, "sans-serif";
   font-weight: bold;
@@ -15,6 +17,7 @@ p {
     font-size: 24px;
   }
 }
+
 
 h2 {
   font-size: 50px;
@@ -38,7 +41,6 @@ h4 {
     font-size: 30px;
   }
 }
-
 //"Active" page styling
 nav a.hamburger-active {
   color: $cerise;
@@ -88,11 +90,16 @@ header {
         flex-direction: row;
         align-items: center;
 
+
         img{
             width: 63px;
-            margin-left:10px;
+            margin-left: 10px;
+            @include for-small-screen {
+              margin-left:20px;
+            }
+            
         }
-                
+
         a:nth-of-type(2) {
             display: none;
                 
@@ -102,7 +109,7 @@ header {
                 margin: 15px;
                 color: $white;
                 text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-                font-size: 25px;
+                font-size: 24px;
                 font-family: $heading;
                 
             }
@@ -123,7 +130,6 @@ header {
             flex-direction: row;
             list-style-type: none;
             color: $black;
-            margin: 20px;
 
             a{
                 font-size: 18px;
@@ -132,6 +138,7 @@ header {
                 text-decoration: none;
                 color: $black;
                 margin: 15px;
+                margin-right: 20px;
                 
                 &:hover {
                   color: $white;
@@ -202,6 +209,7 @@ header {
 
   a {
     display: block;
+
     text-decoration: none;
     color: $black;
     font-family: $text, "sans-serif";
@@ -232,15 +240,23 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: $text, "sans-serif";
+    font-family: $text;
     font-weight: bold;
     font-size: 13px;
     position: relative;
     bottom:0;
 
+    @include for-small-screen {
+      font-size: 15px;
+    }
+
     p {
         margin: 0;
         font-size: 13px;
+
+        @include for-small-screen {
+          font-size: 15px;
+        }
         }
 }
 
@@ -295,12 +311,15 @@ footer {
     align-items: center;
 
     h2{
-        margin-bottom:0;
+        margin: 30px;
+        margin-bottom:0px;
+        padding:0px;
     }
 
     p{
         text-align: center;
-        margin: 2em;
+        margin: 1.5em;
+
 
         @include for-small-screen {
           max-width: 600px;
@@ -308,8 +327,9 @@ footer {
     }
 
     img{
-        max-width: 100%;
+        max-width: 100%; 
         margin: 2em;
+        margin-top: 10px;
     
         @include for-small-screen {
             max-width: 705px;
@@ -330,6 +350,11 @@ footer {
         display:flex;
         flex-direction: column;
         margin-bottom: 80px;
+
+        a{
+          text-decoration: none;
+          color: $black;
+        }
 
     @include for-small-screen{
         flex-direction: row;
