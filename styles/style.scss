@@ -311,12 +311,15 @@ footer {
     align-items: center;
 
     h2{
-        margin-bottom:0;
+        margin: 30px;
+        margin-bottom:0px;
+        padding:0px;
     }
 
     p{
         text-align: center;
-        margin: 2em;
+        margin: 1.5em;
+
 
         @include for-small-screen {
           max-width: 600px;
@@ -324,8 +327,9 @@ footer {
     }
 
     img{
-        max-width: 100%;
+        max-width: 100%; 
         margin: 2em;
+        margin-top: 10px;
     
         @include for-small-screen {
             max-width: 705px;

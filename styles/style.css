@@ -388,12 +388,14 @@ footer p {
 }
 
 .index-presentation h2 {
-  margin-bottom: 0;
+  margin: 30px;
+  margin-bottom: 0px;
+  padding: 0px;
 }
 
 .index-presentation p {
   text-align: center;
-  margin: 2em;
+  margin: 1.5em;
 }
 
 @media (min-width: 769px) {
@@ -405,6 +407,7 @@ footer p {
 .index-presentation img {
   max-width: 100%;
   margin: 2em;
+  margin-top: 10px;
 }
 
 @media (min-width: 769px) {
