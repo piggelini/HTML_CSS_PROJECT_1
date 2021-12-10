@@ -675,6 +675,100 @@ h3 {
           flex-direction: column;
 }
 
+.presentation-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 769px) {
+  .presentation-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 1025px) {
+  .presentation-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.presentation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 170px;
+  max-width: 100%;
+  margin: 5px 0;
+  padding: 0 5px;
+  background-color: #F5F3F2;
+}
+
+@media (min-width: 769px) {
+  .presentation {
+    height: 220px;
+    width: 600px;
+    margin: 5px 5px;
+  }
+}
+
+.presentation .personalfoto {
+  margin: 15px 20px;
+  width: 140px;
+  border-radius: 50%;
+}
+
+@media (min-width: 769px) {
+  .presentation .personalfoto {
+    width: 180px;
+  }
+}
+
+.presentation .personal-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 450px;
+}
+
+.presentation .personal-info h4 {
+  height: 2px;
+}
+
+.presentation .personal-info p {
+  height: 2px;
+}
+
 .recensioner-sida {
   display: -webkit-box;
   display: -ms-flexbox;
