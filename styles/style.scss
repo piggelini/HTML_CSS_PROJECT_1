@@ -648,10 +648,7 @@ h3 {
     box-shadow: $white-box-shadow;
   }
   @include for-large-screen {
-    min-width: 20em;
-  }
-  @include for-extra-large-screen {
-    margin: 2em;
+    min-width: 25em;
   }
 }
 

@@ -902,13 +902,7 @@ h3 {
 
 @media (min-width: 1025px) {
   .recension {
-    min-width: 20em;
-  }
-}
-
-@media (min-width: 1201px) {
-  .recension {
-    margin: 2em;
+    min-width: 25em;
   }
 }
 
