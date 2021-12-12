@@ -616,13 +616,15 @@ h3 {
 }
 
 .recension-wrapper {
+  display: flex;
+  flex-direction: column;
   @include for-large-screen {
-    display: flex;
     flex-direction: row;
-    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 1em;
   }
   @include for-extra-large-screen {
-    margin: 0 20em;
+    margin: 0 4em;
   }
 }
 
@@ -648,10 +650,8 @@ h3 {
     box-shadow: $white-box-shadow;
   }
   @include for-large-screen {
-    min-width: 20em;
-  }
-  @include for-extra-large-screen {
-    margin: 2em;
+    flex-grow: 1;
+    flex-basis: 40%;
   }
 }
 
@@ -806,7 +806,3 @@ h3 {
     }
   }
 }
-
-
-
-
