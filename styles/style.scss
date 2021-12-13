@@ -534,8 +534,6 @@ h3 {
 }
 
 
-
-
 .presentation-row {
   @include for-large-screen {
     display:flex;
@@ -551,13 +549,14 @@ h3 {
   margin: 5px 0;
   padding: 0 5px;
   background-color: $white;
+  box-shadow: $white-box-shadow;
   @include for-small-screen {
     height:220px;
     width: 600px;
-    margin: 5px 5px;
+    margin: 2em 2em;
   }
 
-  //produktbild
+  //personalfoto
   .personalfoto {
     margin: 15px 20px;
     width: 140px;
@@ -577,11 +576,30 @@ h3 {
       height: 2px;
     }
     p {
-      height: 2px;;
+      height: 2px;
     }
   }
 }
 
+.historia {
+  display: flex;
+  flex-direction: row;
+  // height:170px;
+  // max-width: 100%;
+  margin-bottom: 50px;
+  // padding: 0 5px;
+  background-color: $white;
+  box-shadow: $white-box-shadow;
+  @include for-small-screen {
+    height: 310px;
+    width: 95%;
+    margin: 2em 2em;
+  }
+  p {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
 
 
 
