@@ -120,7 +120,7 @@ header {
 .header-nav {
     display: none;
 
-    @include for-small-screen{
+    @include header-menu-change{
         display: flex;
         width: 90%;
         justify-content: flex-end;
@@ -190,7 +190,7 @@ header {
     margin:10px;
     font-size: 50px;
 
-    @include for-small-screen{
+    @include header-menu-change{
         display: none;
     };
 };
