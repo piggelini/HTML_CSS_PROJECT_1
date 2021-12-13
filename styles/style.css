@@ -149,7 +149,7 @@ header {
   display: none;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 845px) {
   .header-nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -230,7 +230,7 @@ header {
   font-size: 50px;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 845px) {
   .fas.fa-bars {
     display: none;
   }

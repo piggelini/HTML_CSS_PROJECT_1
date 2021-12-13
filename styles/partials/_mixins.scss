@@ -24,6 +24,12 @@
   }
 }
 
+@mixin header-menu-change {
+  @media (min-width:845px) {
+    @content;
+  }
+}
+
 // Background gradient
 
 @mixin background-gradient {
