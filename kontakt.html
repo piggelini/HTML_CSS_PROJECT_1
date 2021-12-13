@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&family=Sulphur+Point&display=swap"
         rel="stylesheet">
+    <script src="main.js" async></script>
     <title>JUICED. - Kontakt</title>
 </head>
 
@@ -23,7 +24,7 @@
 
                 <h1 class="Logo">
                     <a href="index.html"><img src="./images/LOGO.png" alt="citrusfrukter logga"></a>
-                    <a class="text-logo" href="index.html">JUICED
+                    <a class="text-logo" href="index.html">JUICED.
                     </a>
                 </h1>
 
@@ -32,12 +33,20 @@
                         <li><a href="index.html">STARTSIDA</a></li>
                         <li><a href="meny.html">MENY</a></li>
                         <li><a href="omOss.html">OM OSS</a></li>
-                        <li><a href="#">RECENSIONER</a></li>
+                        <li><a href="recensioner.html">RECENSIONER</a></li>
                         <li><a href="kontakt.html" class="selected">KONTAKT</a></li>
                     </ul>
                 </nav>
-
-                <i class="fas fa-bars"></i>
+                <nav class="hamburger-dropdown">
+                    <i id="hamburgerIcon" class="fas fa-bars"></i>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="index.html">STARTSIDA</a>
+                        <a href="meny.html">MENY</a>
+                        <a href="omOss.html">OM OSS</a>
+                        <a href="recensioner.html">RECENSIONER</a>
+                        <a href="kontakt.html">KONTAKT</a>
+                    </div>
+                </nav>
             </div>
 
 
