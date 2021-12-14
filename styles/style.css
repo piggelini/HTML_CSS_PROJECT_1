@@ -757,8 +757,10 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 170px;
-  max-width: 100%;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   margin: 5px 0;
   padding: 0 5px;
   background-color: #F5F3F2;
@@ -776,12 +778,14 @@ h3 {
 
 .presentation .personalfoto {
   margin: 15px 20px;
+  height: 140px;
   width: 140px;
   border-radius: 50%;
 }
 
 @media (min-width: 769px) {
   .presentation .personalfoto {
+    height: 180px;
     width: 180px;
   }
 }
@@ -797,14 +801,10 @@ h3 {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  width: 450px;
+  width: auto;
 }
 
 .presentation .personal-info h4 {
-  height: 2px;
-}
-
-.presentation .personal-info p {
   height: 2px;
 }
 
