@@ -5,7 +5,7 @@ hamburgerMenu.addEventListener("click", () => {
   dropdown.classList.toggle("show");
 });
 
-const x = window.matchMedia("(min-width: 845px)");
+const x = window.matchMedia("(min-width: 861px)");
 
 function removeDropdown (x) {
   if (x.matches) {
