@@ -520,7 +520,6 @@ h3 {
 .omOss-main {
   display: flex;
   flex-direction: column;
-  //background-image: none;
 }
 
 .presentation-wrapper {
@@ -583,21 +582,31 @@ h3 {
 
 .historia {
   display: flex;
-  flex-direction: row;
-  // height:170px;
-  // max-width: 100%;
+  max-width: 100%;
   margin-bottom: 50px;
-  // padding: 0 5px;
   background-color: $white;
   box-shadow: $white-box-shadow;
-  @include for-small-screen {
-    height: 310px;
-    width: 95%;
-    margin: 2em 2em;
-  }
   p {
     margin-left: 20px;
     margin-right: 20px;
+    @include for-small-screen {
+    overflow: scroll;
+    overflow-x: hidden;
+    }
+    @include for-large-screen {
+      overflow: hidden;
+    }
+  }
+  
+  @include for-small-screen {
+    align-self: center;
+    height: 350px;
+    margin: 2em 2em;
+  }
+  @include for-large-screen {
+    width:1410px;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
