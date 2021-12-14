@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
     <script src="https://kit.fontawesome.com/456b35c6d6.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,146 +13,205 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&family=Sulphur+Point&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./styles/style.css">
+    <script src="main.js" async></script>
     <title>JUICED. - Recensioner</title>
-
-
 </head>
 
 <body>
+    <div class="wrapper">
+        <header>
+            <div class="header-top">
 
-  <main class="recensioner-sida">
-    <h2>RECENSIONER</h2>
-    <div class="recension-wrapper">
-      <article class="recension">
-        <h3>Otto Falk</h3>
-        <div class="rating">
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="far fa-star"></i>
-            <i class="far fa-star"></i>
-            <i class="far fa-star"></i>
-            <i class="far fa-star"></i>
+                <div class="Logo">
+                    <a href="index.html"><img src="./images/LOGO.png" alt="citrusfrukter logga"></a>
+                    <a class="text-logo" href="index.html">
+                        <h1> JUICED.</h1>
+                    </a>
+                </div>
+
+                <nav class="header-nav">
+                    <ul>
+                        <li><a href="index.html">STARTSIDA</a></li>
+                        <li><a href="meny.html">MENY</a></li>
+                        <li><a href="omOss.html">OM OSS</a></li>
+                        <li><a class="selected" href="recensioner.html">RECENSIONER</a></li>
+                        <li><a href="kontakt.html">KONTAKT</a></li>
+                    </ul>
+                </nav>
+                <nav class="hamburger-dropdown">
+                    <i id="hamburgerIcon" class="fas fa-bars"></i>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="index.html">STARTSIDA</a>
+                        <a href="meny.html">MENY</a>
+                        <a href="omOss.html">OM OSS</a>
+                        <a class="hamburger-active" href="recensioner.html">RECENSIONER</a>
+                        <a href="kontakt.html">KONTAKT</a>
+                    </div>
+                </nav>
+
+            </div>
+
+
+            <div class="header-bottom">
+
+                <!-- h2 ska ändras beroende på vilken sida  -->
+                <h2>Recensioner</h2>
+            </div>
+        </header>
+        <main class="recensioner-sida">
+          <h2>RECENSIONER</h2>
+          <div class="recension-wrapper">
+            <article class="recension">
+              <h3>Otto Falk</h3>
+              <div class="rating">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <p>1/5</p>
+              </div>
+              <hr>
+              <p>"Hur kan man kalla sig för juice försäljare och inte ha en helt vanlig apelsinjuice??"</p>
+            </article>
+            <hr class="recension-divider">
+            <article class="recension">
+              <h3>Samantha Davidson</h3>
+              <div class="rating">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <p>4/5</p>
+              </div>
+              <hr>
+              <p>"Fantastisk juice. Dock är priset är lite för högt."</p>
+            </article>
+            <hr class="recension-divider">
+            <article class="recension">
+              <h3>Linus Hödahl</h3>
+              <div class="rating">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p>5/5</p>
+              </div>
+              <hr>
+              <p>"Supergott, fresh och fantastiskt!"</p>
+            </article>
+            <hr class="recension-divider">
+            <article class="recension">
+              <h3>Martina DiLaurentis</h3>
+              <div class="rating">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <p>1/5</p>
+              </div>
+              <hr>
+              <p>"Dålig service, dåligt bemötande, rent av oförskämda, glömt att pressa juicen en visste inte ens hur man gjorde…"</p>
+            </article>
+            <hr class="recension-divider">
+            <article class="recension">
+              <h3>Ella Faaid</h3>
+              <div class="rating">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p>5/5</p>
+              </div>
+              <hr>
+              <p>"Juice gjord på beställning färsk frukt och andra ingredienser! Bra sätt att hålla sig frisk på"</p>
+            </article>
+            <hr class="recension-divider">
+            <article class="recension">
+              <h3>Elias Danielsson</h3>
+              <div class="rating">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <p>2/5</p>
+              </div>
+              <hr>
+              <p>"Servitören flörtade men min tjej"</p>
+            </article>
+            <hr class="recension-divider">
+            <article class="recension">
+              <h3>Manne Sakavin</h3>
+              <div class="rating">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p>5/5</p>
+              </div>
+              <hr>
+              <p>"Färsk juice, bra smoothie. Juiced är bäst!"</p>
+            </article>
+            <hr class="recension-divider">
+            <article class="recension">
+              <h3>Edith Svensson</h3>
+              <div class="rating">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <p>3/5</p>
+              </div>
+              <hr>
+              <p>"Den lägsta kvaliteten jag någonsin upplevt, juice och smoothie av dålig kvalitet, dålig service."</p>
+            </article>
           </div>
-          <p>1/5</p>
-        </div>
-        <hr>
-        <p>"Hur kan man kalla sig för juice försäljare och inte ha en helt vanlig apelsinjuice??"</p>
-      </article>
-      <hr class="recension-divider">
-      <article class="recension">
-        <h3>Samantha Davidson</h3>
-        <div class="rating">
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="far fa-star"></i>
-          </div>
-          <p>4/5</p>
-        </div>
-        <hr>
-        <p>"Fantastisk juice. Dock är priset är lite för högt."</p>
-      </article>
-      <hr class="recension-divider">
-      <article class="recension">
-        <h3>Linus Hödahl</h3>
-        <div class="rating">
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <p>5/5</p>
-        </div>
-        <hr>
-        <p>"Supergott, fresh och fantastiskt!"</p>
-      </article>
-      <hr class="recension-divider">
-      <article class="recension">
-        <h3>Martina DiLaurentis</h3>
-        <div class="rating">
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="far fa-star"></i>
-            <i class="far fa-star"></i>
-            <i class="far fa-star"></i>
-            <i class="far fa-star"></i>
-          </div>
-          <p>1/5</p>
-        </div>
-        <hr>
-        <p>"Dålig service, dåligt bemötande, rent av oförskämda, glömt att pressa juicen en visste inte ens hur man gjorde…"</p>
-      </article>
-      <hr class="recension-divider">
-      <article class="recension">
-        <h3>Ella Faaid</h3>
-        <div class="rating">
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <p>5/5</p>
-        </div>
-        <hr>
-        <p>"Juice gjord på beställning färsk frukt och andra ingredienser! Bra sätt att hålla sig frisk på"</p>
-      </article>
-      <hr class="recension-divider">
-      <article class="recension">
-        <h3>Elias Danielsson</h3>
-        <div class="rating">
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="far fa-star"></i>
-            <i class="far fa-star"></i>
-            <i class="far fa-star"></i>
-          </div>
-          <p>2/5</p>
-        </div>
-        <hr>
-        <p>"Servitören flörtade men min tjej"</p>
-      </article>
-      <hr class="recension-divider">
-      <article class="recension">
-        <h3>Manne Sakavin</h3>
-        <div class="rating">
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <p>5/5</p>
-        </div>
-        <hr>
-        <p>"Färsk juice, bra smoothie. Juiced är bäst!"</p>
-      </article>
-      <hr class="recension-divider">
-      <article class="recension">
-        <h3>Edith Svensson</h3>
-        <div class="rating">
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="far fa-star"></i>
-            <i class="far fa-star"></i>
-          </div>
-          <p>3/5</p>
-        </div>
-        <hr>
-        <p>"Den lägsta kvaliteten jag någonsin upplevt, juice och smoothie av dålig kvalitet, dålig service."</p>
-      </article>
+        </main>
+
+        <footer>
+
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="index.html">Startsida</a></li>
+                    <li><a href="meny.html">Meny</a></li>
+                    <li><a href="omOss.html">Om oss</a></li>
+                    <li><a class="selected" href="recensioner.html">Recensioner</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+
+
+            <div class="footer-bottom">
+                <p>Copyright © 2021 Juiced</p>
+            </div>
+
+        </footer>
+
     </div>
-  </main>
+
 </body>
 
 </html>

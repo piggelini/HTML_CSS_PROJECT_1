@@ -25,7 +25,7 @@
 }
 
 @mixin header-menu-change {
-  @media (min-width:845px) {
+  @media (min-width:861px) {
     @content;
   }
 }
