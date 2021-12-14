@@ -149,7 +149,7 @@ header {
   display: none;
 }
 
-@media (min-width: 845px) {
+@media (min-width: 861px) {
   .header-nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -213,7 +213,7 @@ header {
   font-size: 20px;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 861px) {
   .header-bottom h2 {
     display: none;
   }
@@ -230,7 +230,7 @@ header {
   font-size: 50px;
 }
 
-@media (min-width: 845px) {
+@media (min-width: 861px) {
   .fas.fa-bars {
     display: none;
   }
@@ -726,6 +726,17 @@ h3 {
   }
 }
 
+.presentation-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 @media (min-width: 1025px) {
   .presentation-row {
     display: -webkit-box;
@@ -746,29 +757,35 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 170px;
-  max-width: 100%;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   margin: 5px 0;
   padding: 0 5px;
   background-color: #F5F3F2;
+  -webkit-box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.05);
 }
 
 @media (min-width: 769px) {
   .presentation {
     height: 220px;
     width: 600px;
-    margin: 5px 5px;
+    margin: 2em 2em;
   }
 }
 
 .presentation .personalfoto {
   margin: 15px 20px;
+  height: 140px;
   width: 140px;
   border-radius: 50%;
 }
 
 @media (min-width: 769px) {
   .presentation .personalfoto {
+    height: 180px;
     width: 180px;
   }
 }
@@ -784,15 +801,63 @@ h3 {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  width: 450px;
+  width: auto;
 }
 
 .presentation .personal-info h4 {
   height: 2px;
 }
 
-.presentation .personal-info p {
-  height: 2px;
+.historia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 100%;
+  margin-bottom: 50px;
+  background-color: #F5F3F2;
+  -webkit-box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.05);
+}
+
+.historia p {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media (min-width: 769px) {
+  .historia p {
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+}
+
+@media (min-width: 1025px) {
+  .historia p {
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 769px) {
+  .historia {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    height: 350px;
+    margin: 2em 2em;
+  }
+}
+
+@media (min-width: 1025px) {
+  .historia {
+    width: 1410px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 
 .recensioner-sida {

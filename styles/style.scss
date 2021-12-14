@@ -171,7 +171,7 @@ header {
       font-size: 20px;
     }
 
-    @include for-small-screen{ 
+    @include header-menu-change{ 
         h2{
             display: none;
         }
@@ -521,7 +521,6 @@ h3 {
 .omOss-main {
   display: flex;
   flex-direction: column;
-  //background-image: none;
 }
 
 .presentation-wrapper {
@@ -534,10 +533,10 @@ h3 {
   }
 }
 
-
-
-
 .presentation-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   @include for-large-screen {
     display:flex;
     flex-direction: row;
@@ -547,42 +546,75 @@ h3 {
 .presentation {
   display: flex;
   flex-direction: row;
-  height:170px;
-  max-width: 100%;
+  // height:170px;
+  width: 100%;
+  height: fit-content;
   margin: 5px 0;
   padding: 0 5px;
   background-color: $white;
+  box-shadow: $white-box-shadow;
   @include for-small-screen {
     height:220px;
     width: 600px;
-    margin: 5px 5px;
+    margin: 2em 2em;
   }
 
-  //produktbild
+  //personalfoto
   .personalfoto {
     margin: 15px 20px;
+    height: 140px;
     width: 140px;
     border-radius: 50%;
     @include for-small-screen {
+      height: 180px;
       width: 180px;
     }
   }
 
-  //produkt rubrik och text
+  //rubrik och text
   .personal-info {
     display:flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 450px;
+    width: auto;
     h4{
       height: 2px;
     }
-    p {
-      height: 2px;;
-    }
+    // p {
+    //   height: 2px;
+    // }
   }
 }
 
+.historia {
+  display: flex;
+  max-width: 100%;
+  margin-bottom: 50px;
+  background-color: $white;
+  box-shadow: $white-box-shadow;
+  p {
+    margin-left: 20px;
+    margin-right: 20px;
+    @include for-small-screen {
+    overflow: scroll;
+    overflow-x: hidden;
+    }
+    @include for-large-screen {
+      overflow: hidden;
+    }
+  }
+  
+  @include for-small-screen {
+    align-self: center;
+    height: 350px;
+    margin: 2em 2em;
+  }
+  @include for-large-screen {
+    width:1410px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 
 
 
