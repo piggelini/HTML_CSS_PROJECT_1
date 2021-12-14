@@ -801,27 +801,52 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  max-width: 100%;
   margin-bottom: 50px;
   background-color: #F5F3F2;
   -webkit-box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.05);
 }
 
+.historia p {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media (min-width: 769px) {
+  .historia p {
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+}
+
+@media (min-width: 1025px) {
+  .historia p {
+    overflow: hidden;
+  }
+}
+
 @media (min-width: 769px) {
   .historia {
-    height: 310px;
-    width: 95%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    height: 350px;
     margin: 2em 2em;
   }
 }
 
-.historia p {
-  margin-left: 20px;
-  margin-right: 20px;
+@media (min-width: 1025px) {
+  .historia {
+    width: 1410px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 
 .recensioner-sida {
