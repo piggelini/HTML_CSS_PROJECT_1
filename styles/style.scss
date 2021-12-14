@@ -545,8 +545,9 @@ h3 {
 .presentation {
   display: flex;
   flex-direction: row;
-  height:170px;
-  max-width: 100%;
+  // height:170px;
+  width: 100%;
+  height: fit-content;
   margin: 5px 0;
   padding: 0 5px;
   background-color: $white;
@@ -560,25 +561,27 @@ h3 {
   //personalfoto
   .personalfoto {
     margin: 15px 20px;
+    height: 140px;
     width: 140px;
     border-radius: 50%;
     @include for-small-screen {
+      height: 180px;
       width: 180px;
     }
   }
 
-  //produkt rubrik och text
+  //rubrik och text
   .personal-info {
     display:flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 450px;
+    width: auto;
     h4{
       height: 2px;
     }
-    p {
-      height: 2px;
-    }
+    // p {
+    //   height: 2px;
+    // }
   }
 }
 
