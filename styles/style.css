@@ -726,6 +726,17 @@ h3 {
   }
 }
 
+.presentation-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 @media (min-width: 1025px) {
   .presentation-row {
     display: -webkit-box;
