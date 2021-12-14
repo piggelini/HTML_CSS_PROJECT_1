@@ -171,7 +171,7 @@ header {
       font-size: 20px;
     }
 
-    @include for-small-screen{ 
+    @include header-menu-change{ 
         h2{
             display: none;
         }
