@@ -439,7 +439,7 @@ h3 {
     flex-direction: column;
     @include for-small-screen {
       display: flex;
-      flex-direction: column;
+      flex-direction: column;//row -------------------
       align-items: center;
     }
 
@@ -486,6 +486,7 @@ h3 {
         height:220px;
         width: 600px;
         margin: 5px 5px;
+        //flex: 1 0 40%; ------------------
       }
 
       //produktbild
