@@ -534,6 +534,9 @@ h3 {
 
 
 .presentation-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   @include for-large-screen {
     display:flex;
     flex-direction: row;
