@@ -399,6 +399,9 @@ footer {
 }
 
 //meny
+.meny-header {
+  z-index: 2;
+}
 .meny-sida {
   //bakgrund
   background-image:url(/images/menyIMG.jpg);
@@ -482,6 +485,31 @@ h3 {
       margin: 5px 0;
       padding: 0 5px;
       background-color: $white;
+      a {
+        text-decoration: none; 
+        color: $black; 
+        //produktbild
+        .product-img {
+          margin: 15px 20px;
+          width: 140px;
+          @include for-small-screen {
+            width: 180px;
+          }
+        }
+        //produkt rubrik och text
+        .product-info {
+          display:flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          width: 450px;
+          h4{
+            height: 2px;
+          }
+          p {
+            height: 2px;
+          }
+        }
+      }
       @include for-small-screen {
         height:220px;
         width: 600px;
@@ -489,28 +517,7 @@ h3 {
         //flex: 1 0 40%; ------------------
       }
 
-      //produktbild
-      .product-img {
-        margin: 15px 20px;
-        width: 140px;
-        @include for-small-screen {
-          width: 180px;
-        }
-      }
-
-      //produkt rubrik och text
-      .product-info {
-        display:flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        width: 450px;
-        h4{
-          height: 2px;
-        }
-        p {
-          height: 2px;;
-        }
-      }
+      
     }
   }
 }
