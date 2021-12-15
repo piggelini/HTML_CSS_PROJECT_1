@@ -659,13 +659,20 @@ h3 {
   color: #23272A;
 }
 
-.meny-wrapper .product-wrapper .product-box .product-img {
-  margin: 20px;
-  width: 145px;
+.meny-wrapper .product-wrapper .product-box a .product-img {
+  margin: 30px 10px;
+  width: 120px;
+}
+
+@media (min-width: 481px) {
+  .meny-wrapper .product-wrapper .product-box a .product-img {
+    margin: 20px;
+    width: 145px;
+  }
 }
 
 @media (min-width: 769px) {
-  .meny-wrapper .product-wrapper .product-box .product-img {
+  .meny-wrapper .product-wrapper .product-box a .product-img {
     width: 180px;
   }
 }

@@ -489,15 +489,19 @@ h3 {
         text-decoration: none; 
         color: $black; 
         //produktbild
-        
-      }
-      .product-img {
-        margin: 20px;
-        width: 145px;
-        @include for-small-screen {
-          width: 180px;
+        .product-img {
+          margin: 30px 10px;
+          width: 120px;
+          @include for-tablet {
+            margin: 20px;
+            width: 145px; 
+          }
+          @include for-small-screen {
+            width: 180px;
+          }
         }
       }
+      
       //produkt rubrik och text
       .product-info {
         display:flex;
