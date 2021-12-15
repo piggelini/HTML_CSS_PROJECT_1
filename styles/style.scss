@@ -457,7 +457,7 @@ h3 {
         flex-direction: column;
         align-items: flex-start;
       }
-      @include for-large-screen {
+      @include for-extra-large-screen {
         width:1210px;
         height: 50px;
         padding:0 10px;
@@ -470,7 +470,7 @@ h3 {
 
     //produkterna är placerade i två kolumner för stor skärm
     .two-products {
-      @include for-large-screen {
+      @include for-extra-large-screen {
         display:flex;
         flex-direction: row;
       }
@@ -480,7 +480,7 @@ h3 {
     .product-box {
       display: flex;
       flex-direction: row;
-      height:170px;
+      height:180px;
       max-width: 100%;
       margin: 5px 0;
       padding: 0 5px;
@@ -492,8 +492,8 @@ h3 {
         
       }
       .product-img {
-        margin: 15px 20px;
-        width: 140px;
+        margin: 20px;
+        width: 145px;
         @include for-small-screen {
           width: 180px;
         }
@@ -503,8 +503,10 @@ h3 {
         display:flex;
         flex-direction: column;
         justify-content: flex-start;
-        width: 450px;
+        width: 440px;
+        height: 145px;
         h4{
+          margin-top: 20px;
           height: 2px;
         }
         p {
