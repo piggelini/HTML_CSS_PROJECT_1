@@ -15,7 +15,8 @@
 </head>
 <body>
     <div class="wrapper">
-        <header>
+
+        <header class="meny-header">
             <div class="header-top">
 
                 <div class="Logo">
@@ -26,27 +27,33 @@
                 </div>
 
                 <nav class="header-nav">
-                    <ul> 
-                        <li><a href="index.html">STARTSIDA</a></li> 
+                    <ul>
+                        <li><a href="index.html">STARTSIDA</a></li>
                         <li><a href="meny.html" class="selected">MENY</a></li>
                         <li><a href="omOss.html">OM OSS</a></li>
-                        <li><a href="#">RECENSIONER</a></li>
+                        <li><a href="recensioner.html">RECENSIONER</a></li>
                         <li><a href="kontakt.html">KONTAKT</a></li>
                     </ul>
                 </nav>
+                <nav class="hamburger-dropdown">
+                    <i id="hamburgerIcon" class="fas fa-bars"></i>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="index.html">STARTSIDA</a>
+                        <a href="meny.html">MENY</a>
+                        <a href="omOss.html">OM OSS</a>
+                        <a href="recensioner.html">RECENSIONER</a>
+                        <a href="kontakt.html">KONTAKT</a>
+                    </div>
+                </nav>
 
-                <i class="fas fa-bars"></i>
             </div>
 
 
             <div class="header-bottom">
-
-                <!-- h2 ska ändras beroende på vilken sida  -->
-                <h2>Startsida</h2>
+                <h2>Meny</h2>
             </div>
         </header>
 
-        <!-- I main skriver vi koden för respektive sida. -->
         <main class="meny-sida">
             <h2>FRESHEN your day</h2>
             <div class="meny-wrapper">
@@ -57,49 +64,73 @@
                     </div>
                     <div class="two-products">
                         <article class="product-box">
-                            <img class="product-img" src="images/imagesMeny/juice1.jpg" alt="ett glas apelsinjuice">
+                            <a href="#">
+                                <img class="product-img" src="images/imagesMeny/juice1.jpg" alt="ett glas apelsinjuice">
+                            </a>
                             <div class="product-info">
-                                <h4>CLASSIC ORANGE</h4>
-                                <p>Apelsinjuice, ingefära, lime, lichee och is. 58.00 kr</p>
+                                <a href="#">
+                                    <h4>CLASSIC ORANGE</h4>
+                                    <p>Apelsinjuice, ingefära, lime, lichee och is. 58.00 kr</p>
+                                </a>
                             </div>
                         </article>
                         <article class="product-box">
-                            <img class="product-img" src="images/imagesMeny/juice2.jpg" alt="Två glas orange juice">
+                            <a href="#">
+                                <img class="product-img" src="images/imagesMeny/juice2.jpg" alt="En liten flaska grön juice">
+                            </a>
                             <div class="product-info">
-                                <h4>GREENERGIZER</h4>
-                                <p>Äppeljuice, citron, gurka, ingefära, kiwi och is. 62.00 kr</p>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="two-products">
-                        <article class="product-box">
-                            <img class="product-img" src="images/imagesMeny/juice3.jpg" alt="Två glas orange juice">
-                            <div class="product-info">
-                                <h4>FEEL A SUNRISE</h4>
-                                <p>Apelsinjuice, granatäpple, körsbär och is. 59.00 kr</p>
-                            </div>
-                        </article>
-                        <article class="product-box">
-                            <img class="product-img" src="images/imagesMeny/juice4.jpg" alt="Två glas orange juice">
-                            <div class="product-info">
-                                <h4>LET THAT MAN-GO</h4>
-                                <p>Apelsinjuice, mango, ananas, passionsfrukt och is. 62.00 kr</p>
+                                <a href="#">
+                                    <h4>GREENERGIZER</h4>
+                                    <p>Äppeljuice, citron, gurka, ingefära, kiwi och is. 62.00 kr</p>
+                                </a>
                             </div>
                         </article>
                     </div>
                     <div class="two-products">
                         <article class="product-box">
-                            <img class="product-img" src="images/imagesMeny/juice5.jpg" alt="Två glas orange juice">
+                            <a href="#">
+                                <img class="product-img" src="images/imagesMeny/juice3.jpg" alt="Två glas orange juice">
+                            </a>
                             <div class="product-info">
-                                <h4>PINK DRINK</h4>
-                                <p>Äpple, blodapelsin, jordgubbar och is. 55.00 kr</p>
+                                <a href="#">
+                                    <h4>FEEL A SUNRISE</h4>
+                                    <p>Apelsinjuice, granatäpple, körsbär och is. 59.00 kr</p>
+                                </a>
                             </div>
                         </article>
                         <article class="product-box">
-                            <img class="product-img" src="images/imagesMeny/juice6.jpg" alt="Två glas orange juice">
+                            <a href="#">
+                                <img class="product-img" src="images/imagesMeny/juice4.jpg" alt="Ett glas mangojuice">
+                            </a>
                             <div class="product-info">
-                                <h4>JUICED DO IT.</h4>
-                                <p>Äpple, morot, ingefära, passionsfrukt och is. 62.00 kr</p>
+                                <a href="#">
+                                    <h4>LET THAT MAN-GO</h4>
+                                    <p>Apelsinjuice, mango, ananas, passionsfrukt och is. 62.00 kr</p>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="two-products">
+                        <article class="product-box">
+                            <a href="#">
+                                <img class="product-img" src="images/imagesMeny/juice5.jpg" alt="Ett glas rosa juice">
+                            </a>
+                            <div class="product-info">
+                                <a href="#">
+                                    <h4>PINK DRINK</h4>
+                                    <p>Äpple, blodapelsin, jordgubbar och is. 55.00 kr</p>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="product-box">
+                            <a href="#">
+                                <img class="product-img" src="images/imagesMeny/juice6.jpg" alt="Ett glas orange juice">
+                            </a>
+                            <div class="product-info">
+                                <a href="#">
+                                    <h4>JUICED DO IT.</h4>
+                                    <p>Äpple, morot, ingefära, passionsfrukt och is. 62.00 kr</p>
+                                </a>
                             </div>
                         </article>
                     </div>
@@ -110,33 +141,49 @@
                     </div>
                     <div class="two-products">
                         <article class="product-box">
-                            <img class="product-img" src="images/imagesMeny/smoothie1.jpg" alt="Två glas orange juice">
+                            <a href="#">
+                                <img class="product-img" src="images/imagesMeny/smoothie1.jpg" alt="Ett glas creme-vit smoothie">
+                            </a>
                             <div class="product-info">
-                                <h4>MONKY BUISNESS</h4>
-                                <p>Banan, Mandel, Vanlij, Mjölk och Is</p>
+                                <a href="#">
+                                    <h4>MONKY BUISNESS</h4>
+                                    <p>Banan, mandel, vanlij, mjölk och is. 58.00 kr</p>
+                                </a>
                             </div>
                         </article>
                         <article class="product-box">
-                            <img class="product-img" src="images/imagesMeny/smoothie2.jpg" alt="Två glas orange juice">
+                            <a href="#">
+                                <img class="product-img" src="images/imagesMeny/smoothie2.jpg" alt="Ett glas gul smoothie">
+                            </a>
                             <div class="product-info">
-                                <h4>YELLOW MATE</h4>
-                                <p>Mango, banan, jordgubbar, apelsinjuice, yoghurt. 59.00 kr</p>
+                                <a href="#">
+                                    <h4>YELLOW MATE</h4>
+                                    <p>Mango, banan, jordgubbar, apelsinjuice, yoghurt. 59.00 kr</p>
+                                </a>
                             </div>
                         </article>
                     </div>
                     <div class="two-products">
                         <article class="product-box">
-                            <img class="product-img" src="images/imagesMeny/smoothie3.jpg" alt="Två glas orange juice">
+                            <a href="#">
+                                <img class="product-img" src="images/imagesMeny/smoothie3.jpg" alt="Ett glas rosa smoothie">
+                            </a>
                             <div class="product-info">
-                                <h4>STRAWBERRY FIELDS</h4>
-                                <p>Jordgubbar, hallon, mint, banan, yoghurt, mjölk. 59.00 kr</p>
+                                <a href="#">
+                                    <h4>STRAWBERRY FIELDS</h4>
+                                    <p>Jordgubbar, hallon, mint, banan, yoghurt, mjölk. 59.00 kr</p>
+                                </a>
                             </div>
                         </article>
                         <article class="product-box">
-                            <img class="product-img" src="images/imagesMeny/smoothie4.jpg" alt="Två glas orange juice">
+                            <a href="#">
+                                <img class="product-img" src="images/imagesMeny/smoothie4.jpg" alt="Ett glas grön smoothie">
+                            </a>
                             <div class="product-info">
-                                <h4>AVO-FEVER</h4>
-                                <p>Avocado, banan, spenat, spirulina, yoghurt. 59.00 kr</p>
+                                <a href="#">
+                                    <h4>AVO-FEVER</h4>
+                                    <p>Avocado, banan, spenat, spirulina, yoghurt. 59.00 kr</p>
+                                </a>
                             </div>
                         </article>
                     </div>
@@ -145,16 +192,14 @@
             <div class="bottom-space"></div>
         </main>
 
-
-
         <footer>
 
-            <nav class="footer-nav"> <!--- När ni kopierar header och footer så behöver ni ändra så att klassen selected är på eran specifika länk --->
+            <nav class="footer-nav">
                 <ul>
                     <li><a href="index.html">Startsida</a></li>
                     <li><a href="meny.html" class="selected">Meny</a></li>
                     <li><a href="omOss.html">Om oss</a></li>
-                    <li><a href="#">Recensioner</a></li>
+                    <li><a href="recensioner.html">Recensioner</a></li>
                     <li><a href="kontakt.html">Kontakt</a></li>
                 </ul>
             </nav>
@@ -165,7 +210,6 @@
             </div>
 
         </footer>
-
     </div>
 
 </body>
