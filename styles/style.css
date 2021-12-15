@@ -517,7 +517,7 @@ footer p {
 }
 
 .meny-sida {
-  background-image: url(/images/menyIMG.jpg);
+  background-image: url(/images/imagesMeny/imgMeny.jpg);
   -webkit-filter: contrast(90%);
           filter: contrast(90%);
   max-width: 100%;
